@@ -1,0 +1,29 @@
+{
+ "intents" : [
+    {
+        "intent_name": "greeting",
+        "training_phrases": [
+            "hello",
+            "hi",
+            "hi there",
+            "hey"
+        ],
+
+        "responses": [
+            "Hello! I am Quack, your personal Ai assitant."
+        ]
+    },
+    {
+        "intent_name": "duck_facts",
+        "training_phrases": [
+          "tell me a fact about ducks",
+          "What is an intresting aspect about ducks",
+          "Cool fact About ducks?"
+        ],
+
+        "responses": [
+           "Ducks can sleep with one eye open while keeping half of their brain awake to watch for danger"
+        ]    
+    }
+ ]
+}
