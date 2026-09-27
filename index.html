@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quack.ai</title>
+    <title>Quack.ai — Your duck-brained AI assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cb.css">
 </head>
 <body>
+
+    <div class="ripple-bg" aria-hidden="true">
+        <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+            <path class="ripple ripple-1" d="M0,120 C300,180 900,60 1200,120 L1200,300 L0,300 Z"></path>
+            <path class="ripple ripple-2" d="M0,160 C300,100 900,220 1200,160 L1200,300 L0,300 Z"></path>
+        </svg>
+    </div>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="hero-eyebrow">🦆 duck-powered AI</p>
+            <h1 class="hero-title">Quack.ai</h1>
+            <p class="hero-tagline">Ask the internet's most opinionated duck.</p>
+            <p class="hero-sub">
+                Quack.ai is a small AI assistant that knows an unreasonable amount about ducks —
+                their species, habits, diets, and the odd fact you didn't ask for. Type a question
+                and get a real answer, duck-style.
+            </p>
+            <button class="cta-btn" data-open-chat>
+                Chat with Quack
+                <span class="cta-icon">💬</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="learn-section">
+        <div class="learn-heading">
+            <h2>Learn about ducks</h2>
+            <p>A quick primer — then let Quack fill in the rest.</p>
+        </div>
+
+        <div class="card-grid">
+            <article class="duck-card">
+                <span class="card-icon">🦆</span>
+                <h3>Duck Species</h3>
+                <p>From the familiar mallard to sea-going eiders, hundreds of species have adapted to wildly different habitats worldwide.</p>
+            </article>
+
+            <article class="duck-card">
+                <span class="card-icon">🌊</span>
+                <h3>Duck Habitats</h3>
+                <p>Ducks live wherever there's water — lakes, rivers, coastlines, even city parks — and many migrate seasonally.</p>
+            </article>
+
+            <article class="duck-card">
+                <span class="card-icon">🍽️</span>
+                <h3>Duck Diet</h3>
+                <p>Most ducks eat plants, seeds, and small aquatic critters. Bread looks generous but offers little real nutrition.</p>
+            </article>
+
+            <article class="duck-card">
+                <span class="card-icon">🥚</span>
+                <h3>Ducklings</h3>
+                <p>Many ducklings can swim within hours of hatching, though they stay close to mom for protection and guidance.</p>
+            </article>
+
+            <article class="duck-card">
+                <span class="card-icon">🧠</span>
+                <h3>Duck Behavior</h3>
+                <p>Quacking is just one signal in a wider vocabulary of calls, postures, and wing movements ducks use to communicate.</p>
+            </article>
+
+            <article class="duck-card">
+                <span class="card-icon">🤯</span>
+                <h3>Weird Duck Facts</h3>
+                <p>Some ducks sleep with one eye open, staying half-alert for predators even while resting. Ask Quack for more.</p>
+            </article>
+        </div>
+
+        <p class="learn-footnote">Curious about something specific? Quack knows more than fits on this page — just ask.</p>
+    </main>
+
+    <footer class="site-footer">
+        <p>ducks for life, powered by a small intent-matching backend. 🦆</p>
+    </footer>
+
+    <!-- ===== Chatbot widget (preserved) ===== -->
     <div id="chatbot-icon">
      <img src="img/image_2026-08-16_215942219.png" alt="duck">
     </div>
@@ -24,9 +104,9 @@
         <input type="text" id="chatbot-input" placeholder="type a message....."/>
         <button id="send-btn">Send</button>
       </div>
-      
-
     </div>
+
+    <script src="config.js"></script>
     <script src="chatbot.js"></script>
 </body>
 </html>
