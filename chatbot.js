@@ -42,34 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function getBotResponse(userMessage) {
-        try {
-            const response = await fetch("chatbot_db.json");
-            const data = await response.json();
+    try {
+        const response = await fetch("http://127.0.0.1:8000/chat", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                message: userMessage
+            })
+        });
 
-            const cleanInput = userMessage.toLowerCase().trim();
-            let botReply = null;
+        const data = await response.json();
 
-            for (const intent of data.intents) {
-                const matched = intent.training_phrases.some(phrase => {
-                    const cleanPhrase = phrase.toLowerCase().trim();
-                    return cleanInput === cleanPhrase || cleanInput.includes(cleanPhrase);
-                });
+        appendMessage("bot", data.response);
 
-                if (matched) {
-                    const randomIndex = Math.floor(Math.random() * intent.responses.length);
-                    botReply = intent.responses[randomIndex];
-                    break;
-                }
-            }
-
-            if (!botReply) {
-                botReply = "Quack! I'm not sure how to answer that yet.";
-            }
-
-            appendMessage("bot", botReply);
-        } catch (error) {
-            console.error("Error Loading JSON:", error);
-            appendMessage("bot", "Quack!!, Something went wrong.");
-        }
+    } catch (error) {
+        console.error("Error communicating with API:", error);
+        appendMessage("bot", "Quack!! Something went wrong.");
     }
+ }
 });

@@ -1,0 +1,349 @@
+{
+  "intents": [
+    {
+      "intent_name": "greeting",
+      "training_phrases": [
+        "hello",
+        "hi",
+        "hey",
+        "hey there",
+        "hi there",
+        "hello there",
+        "hiya",
+        "heya",
+        "yo",
+        "greetings",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "howdy",
+        "hey quack",
+        "hi quack",
+        "hello quack",
+        "quack",
+        "what's up",
+        "whats up",
+        "how are you",
+        "how are you doing",
+        "how's it going",
+        "hows it going",
+        "are you there",
+        "anyone there"
+      ],
+      "responses": [
+        "Hello! I'm Quack, your personal AI assistant. 🦆",
+        "Quack! Hello there! How can I help you?",
+        "Hey! Quack is here and ready to help.",
+        "Hi there! What would you like to talk about?",
+        "Quack! Nice to see you. What's on your mind?",
+        "Hello! Ask me anything duck-related, or just have a chat with me.",
+        "Hey there! I'm doing ducky. What can I do for you?",
+        "Quack! I'm here. What shall we explore?"
+      ]
+    },
+    {
+      "intent_name": "duck_facts",
+      "training_phrases": [
+        "tell me a fact about ducks",
+        "tell me something about ducks",
+        "give me a duck fact",
+        "give me a fact about ducks",
+        "what is an interesting fact about ducks",
+        "what is an interesting aspect about ducks",
+        "cool fact about ducks",
+        "cool fact about ducks?",
+        "do you know any duck facts",
+        "do you know anything interesting about ducks",
+        "tell me something interesting about ducks",
+        "what's interesting about ducks",
+        "what is interesting about ducks",
+        "teach me something about ducks",
+        "teach me about ducks",
+        "I want to learn about ducks",
+        "surprise me with a duck fact",
+        "give me a random duck fact",
+        "random duck fact",
+        "another duck fact",
+        "one more duck fact"
+      ],
+      "responses": [
+        "Ducks can sleep with one eye open while keeping part of their brain alert for danger.",
+        "Some ducks can dive underwater to search for food, while others mainly feed on the surface.",
+        "Ducks have waterproof feathers. They spread oil from a gland near their tail over their feathers to help keep water out.",
+        "Ducklings can recognize and follow their mother soon after hatching.",
+        "Many ducks have excellent eyesight and can see a wider range of colors than humans.",
+        "Ducks use a variety of calls and body movements to communicate with each other.",
+        "Not every duck quacks! Different duck species make many different sounds.",
+        "Ducks have specialized bills that help them find and filter food from water or mud."
+      ]
+    },
+    {
+      "intent_name": "duck_behavior",
+      "training_phrases": [
+        "why do ducks quack",
+        "why do ducks make sounds",
+        "how do ducks communicate",
+        "how do ducks talk",
+        "why do ducks swim",
+        "why can ducks swim",
+        "how do ducks swim",
+        "why do ducks wag their tails",
+        "why do ducks bob their heads",
+        "why do ducks flap their wings",
+        "why do ducks fly",
+        "can ducks fly",
+        "do all ducks fly",
+        "why do ducks walk like that",
+        "why do ducks follow each other",
+        "why do ducklings follow their mother",
+        "how do ducks sleep",
+        "where do ducks sleep"
+      ],
+      "responses": [
+        "Ducks communicate using calls, body movements, and other sounds. Quacking is only one part of their vocabulary!",
+        "Ducks swim well because their webbed feet work like little paddles.",
+        "Ducks flap their wings for several reasons, including flying, stretching, displaying themselves, and drying their feathers.",
+        "Many ducks sleep while floating on water or resting in safe places. Some species can even rest one side of their brain at a time.",
+        "Ducklings often follow their mother closely because staying together provides protection and helps them learn where to find food and shelter.",
+        "Not all ducks fly equally well. Some species are strong fliers, while others have limited flight or cannot fly."
+      ]
+    },
+    {
+      "intent_name": "duck_appearance",
+      "training_phrases": [
+        "why are ducks colorful",
+        "why do male ducks look different",
+        "why are male ducks colorful",
+        "what color are ducks",
+        "why do ducks have feathers",
+        "why are duck feathers waterproof",
+        "what are duck feathers for",
+        "why do ducks have bills",
+        "what is a duck bill for",
+        "why do ducks have webbed feet",
+        "what are duck feet for"
+      ],
+      "responses": [
+        "Duck feathers provide insulation, help with swimming, and can be waterproofed with oil from a special gland.",
+        "Many male ducks have brighter colors than females, especially during breeding season. These colors can help attract mates.",
+        "A duck's bill is adapted to the way it feeds. Different species have different bill shapes suited to different foods.",
+        "Webbed feet help ducks push against water efficiently when swimming.",
+        "Duck colors vary enormously between species. Some are brightly colored while others have mostly brown, gray, or black plumage."
+      ]
+    },
+    {
+      "intent_name": "duck_food",
+      "training_phrases": [
+        "what do ducks eat",
+        "what can ducks eat",
+        "what do ducklings eat",
+        "what is a duck's favorite food",
+        "what do ducks eat in the wild",
+        "can ducks eat bread",
+        "should ducks eat bread",
+        "what should I feed a duck",
+        "what food is safe for ducks",
+        "do ducks eat fish",
+        "do ducks eat insects",
+        "do ducks eat plants",
+        "do ducks eat grass"
+      ],
+      "responses": [
+        "Ducks can eat a variety of foods depending on their species, including plants, seeds, insects, small aquatic animals, and other natural foods.",
+        "Bread isn't a good staple food for ducks because it provides lots of calories without much nutrition. Natural foods and appropriate duck feed are better.",
+        "Many ducks eat plants, seeds, insects, and small aquatic creatures. Their diet depends on the species and environment.",
+        "Ducklings need nutritious food appropriate for their age. Their diet is different from simply feeding them human snacks."
+      ]
+    },
+    {
+      "intent_name": "duck_species",
+      "training_phrases": [
+        "how many types of ducks are there",
+        "what species of ducks are there",
+        "what are some types of ducks",
+        "name some duck species",
+        "what is the most common duck",
+        "what is the biggest duck",
+        "what is the smallest duck",
+        "are all ducks the same",
+        "are there different kinds of ducks",
+        "what is a mallard",
+        "tell me about mallards"
+      ],
+      "responses": [
+        "There are many different duck species around the world, and they come in a surprising variety of sizes, colors, and behaviors.",
+        "Mallards are one of the most widely recognized duck species. The males usually have a green head, while females are mostly mottled brown.",
+        "Nope! Ducks are a diverse group of birds. Different species have evolved for different habitats and ways of finding food.",
+        "Duck species can look dramatically different. Some live mostly on freshwater, while others are adapted to coastal or marine environments."
+      ]
+    },
+    {
+      "intent_name": "ducklings",
+      "training_phrases": [
+        "tell me about ducklings",
+        "what are ducklings",
+        "how are ducklings born",
+        "when do ducklings hatch",
+        "why do ducklings follow their mother",
+        "can ducklings swim",
+        "can baby ducks swim",
+        "what do baby ducks eat",
+        "why are ducklings yellow",
+        "are ducklings born knowing how to swim"
+      ],
+      "responses": [
+        "Ducklings are baby ducks, and many species can swim surprisingly soon after hatching.",
+        "Ducklings often stay close to their mother for protection and guidance.",
+        "Many ducklings are covered in soft down rather than the full adult feathering you'll see later in life.",
+        "Ducklings can often walk and swim shortly after hatching, although they still rely heavily on their mother for protection and guidance."
+      ]
+    },
+    {
+      "intent_name": "duck_habitat",
+      "training_phrases": [
+        "where do ducks live",
+        "where can ducks be found",
+        "what habitat do ducks live in",
+        "do ducks live in lakes",
+        "do ducks live in rivers",
+        "do ducks live in the ocean",
+        "can ducks live in cities",
+        "where do wild ducks live",
+        "where do ducks sleep at night",
+        "do ducks migrate"
+      ],
+      "responses": [
+        "Ducks live in many different environments, including lakes, rivers, wetlands, ponds, coastal areas, and even urban parks.",
+        "Different duck species prefer different habitats. Some spend much of their time in freshwater, while others are adapted to coastal environments.",
+        "Many duck species migrate seasonally, traveling between breeding and wintering areas.",
+        "Ducks can adapt surprisingly well to human environments, which is why you can sometimes find them living around city ponds and parks."
+      ]
+    },
+    {
+      "intent_name": "duck_personality",
+      "training_phrases": [
+        "are ducks friendly",
+        "are ducks smart",
+        "are ducks intelligent",
+        "are ducks social",
+        "do ducks have personalities",
+        "do ducks recognize people",
+        "can ducks recognize humans",
+        "do ducks have feelings",
+        "are ducks curious",
+        "are ducks aggressive"
+      ],
+      "responses": [
+        "Ducks can learn, remember patterns, recognize individuals, and show different behaviors depending on their environment.",
+        "Ducks are social animals and often spend time in groups, although their behavior varies between species.",
+        "Individual ducks can behave differently. Some may be bold and curious, while others are more cautious.",
+        "Some ducks can become accustomed to humans, especially when they regularly encounter people, but wild ducks should still be given plenty of space."
+      ]
+    },
+    {
+      "intent_name": "capabilities",
+      "training_phrases": [
+        "what can you do",
+        "what do you do",
+        "what are your abilities",
+        "what can you help me with",
+        "how can you help me",
+        "what are you capable of",
+        "tell me about yourself",
+        "who are you",
+        "what are you",
+        "what is quack ai",
+        "what is quack",
+        "are you an ai",
+        "are you a chatbot"
+      ],
+      "responses": [
+        "I'm Quack, a duck-themed AI assistant! Right now I can answer questions from my little knowledge base and chat about ducks.",
+        "I'm Quack! I was built to experiment with chatbot development, APIs, and a healthy amount of duck knowledge.",
+        "I'm a chatbot called Quack. Ask me about ducks, animals, or just say hello!",
+        "I'm still learning! My current specialty is ducks, but my creator is working on expanding what I can do."
+      ]
+    },
+    {
+      "intent_name": "small_talk",
+      "training_phrases": [
+        "how are you",
+        "how are you doing",
+        "are you okay",
+        "how's your day",
+        "hows your day",
+        "what are you doing",
+        "are you bored",
+        "do you like ducks",
+        "do you like talking",
+        "what do you like",
+        "tell me something",
+        "say something interesting",
+        "entertain me"
+      ],
+      "responses": [
+        "I'm doing ducky! Thanks for asking. 🦆",
+        "I'm perfectly fine. Being a chatbot has very few bad days.",
+        "I'm here, floating peacefully through the internet.",
+        "I spend most of my time waiting for someone to ask me something interesting.",
+        "Do I like ducks? I'm literally called Quack. What do you think?",
+        "Here's something interesting: the animal kingdom has some incredibly strange adaptations. Ducks are just one example!"
+      ]
+    },
+    {
+      "intent_name": "thanks",
+      "training_phrases": [
+        "thanks",
+        "thank you",
+        "thanks quack",
+        "thank you quack",
+        "thx",
+        "appreciate it",
+        "that's helpful",
+        "that was helpful",
+        "you helped me",
+        "nice one"
+      ],
+      "responses": [
+        "You're welcome! Quack! 🦆",
+        "Anytime!",
+        "Happy to help!",
+        "You're welcome. That's what I'm here for!",
+        "No problem! Keep the duck questions coming."
+      ]
+    },
+    {
+      "intent_name": "farewell",
+      "training_phrases": [
+        "bye",
+        "goodbye",
+        "bye quack",
+        "goodbye quack",
+        "see you",
+        "see you later",
+        "talk to you later",
+        "gotta go",
+        "I have to go",
+        "good night",
+        "see ya"
+      ],
+      "responses": [
+        "Goodbye! Stay ducky! 🦆",
+        "See you later! Quack!",
+        "Bye! I'll be here whenever you need me.",
+        "Good night! Sleep like a duck with one eye open... maybe don't actually do that.",
+        "See you next time!"
+      ]
+    },
+    {
+      "intent_name": "unknown",
+      "training_phrases": [],
+      "responses": [
+        "Quack! I'm not sure about that one yet. Try asking me something about ducks!",
+        "Hmm... my duck brain doesn't know that one yet.",
+        "Quack! I haven't learned how to answer that yet.",
+        "I'm still learning! Try asking me about ducks, ducklings, or how I work."
+      ]
+    }
+  ]
+}
