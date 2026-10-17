@@ -31,13 +31,13 @@
         "anyone there"
       ],
       "responses": [
-        "Hello! I'm Quack, your personal AI assistant. 🦆",
-        "Quack! Hello there! How can I help you?",
-        "Hey! Quack is here and ready to help.",
-        "Hi there! What would you like to talk about?",
+        "Hello! I'm Quack, your personal AI assistant. You can ask me anything duck-related 🦆",
+        "Quack! Hello there!",
+        "Hey! Quack is here and ready to help!!.",
+        "Hi there! Would you like to talk about ducks?",
         "Quack! Nice to see you. What's on your mind?",
         "Hello! Ask me anything duck-related, or just have a chat with me.",
-        "Hey there! I'm doing ducky. What can I do for you?",
+        "Hey there! I'm doing well. What can I do for you?",
         "Quack! I'm here. What shall we explore?"
       ]
     },
@@ -51,7 +51,6 @@
         "what is an interesting fact about ducks",
         "what is an interesting aspect about ducks",
         "cool fact about ducks",
-        "cool fact about ducks?",
         "do you know any duck facts",
         "do you know anything interesting about ducks",
         "tell me something interesting about ducks",
@@ -64,48 +63,108 @@
         "give me a random duck fact",
         "random duck fact",
         "another duck fact",
-        "one more duck fact"
+        "one more duck fact",
+        "fun fact about ducks",
+        "fun duck facts",
+        "duck trivia"
       ],
       "responses": [
-        "Ducks can sleep with one eye open while keeping part of their brain alert for danger.",
+        "Some ducks can sleep with one eye open, keeping half of their brain alert for danger. Research on mallards found that ducks at the edge of a group do this more often.",
         "Some ducks can dive underwater to search for food, while others mainly feed on the surface.",
-        "Ducks have waterproof feathers. They spread oil from a gland near their tail over their feathers to help keep water out.",
+        "Ducks have water-resistant feathers. They spread oil from a gland near their tail over their feathers to help keep water out.",
         "Ducklings can recognize and follow their mother soon after hatching.",
-        "Many ducks have excellent eyesight and can see a wider range of colors than humans.",
+        "Ducks, like most birds, appear to see colors humans can't, including some ultraviolet light.",
         "Ducks use a variety of calls and body movements to communicate with each other.",
         "Not every duck quacks! Different duck species make many different sounds.",
         "Ducks have specialized bills that help them find and filter food from water or mud."
       ]
     },
     {
-      "intent_name": "duck_behavior",
+      "intent_name": "duck_definition",
       "training_phrases": [
-        "why do ducks quack",
-        "why do ducks make sounds",
-        "how do ducks communicate",
-        "how do ducks talk",
-        "why do ducks swim",
-        "why can ducks swim",
-        "how do ducks swim",
-        "why do ducks wag their tails",
-        "why do ducks bob their heads",
-        "why do ducks flap their wings",
-        "why do ducks fly",
-        "can ducks fly",
-        "do all ducks fly",
-        "why do ducks walk like that",
-        "why do ducks follow each other",
-        "why do ducklings follow their mother",
-        "how do ducks sleep",
-        "where do ducks sleep"
+        "what is a duck",
+        "what is duck",
+        "what are ducks",
+        "define duck",
+        "tell me about ducks",
+        "tell me about a duck",
+        "what exactly is a duck",
+        "explain what a duck is",
+        "ducks explained"
       ],
       "responses": [
-        "Ducks communicate using calls, body movements, and other sounds. Quacking is only one part of their vocabulary!",
-        "Ducks swim well because their webbed feet work like little paddles.",
-        "Ducks flap their wings for several reasons, including flying, stretching, displaying themselves, and drying their feathers.",
-        "Many ducks sleep while floating on water or resting in safe places. Some species can even rest one side of their brain at a time.",
-        "Ducklings often follow their mother closely because staying together provides protection and helps them learn where to find food and shelter.",
-        "Not all ducks fly equally well. Some species are strong fliers, while others have limited flight or cannot fly."
+        "Ducks are waterfowl in the family Anatidae, the same family that includes geese and swans. They typically have broad bills, webbed feet, and feathers that shed water, and most species spend much of their lives on or near water."
+      ]
+    },
+    {
+      "intent_name": "duck_classification",
+      "training_phrases": [
+        "what family are ducks in",
+        "scientific classification of ducks",
+        "what is the taxonomy of ducks",
+        "what order are ducks in",
+        "duck taxonomy",
+        "how are ducks classified",
+        "what is the scientific name for a mallard"
+      ],
+      "responses": [
+        "Ducks are birds in the class Aves, order Anseriformes, and family Anatidae. 'Duck' is an everyday word rather than one tidy scientific group, so exactly which species count as ducks depends on the classification system. The mallard's scientific name is Anas platyrhynchos."
+      ]
+    },
+    {
+      "intent_name": "duck_are_birds",
+      "training_phrases": [
+        "are ducks birds",
+        "is a duck a bird",
+        "are ducks mammals",
+        "are ducks reptiles",
+        "is a duck a mammal"
+      ],
+      "responses": [
+        "Yes, ducks are birds. They have feathers, lay eggs, have beaks, and are warm-blooded, just like other birds."
+      ]
+    },
+    {
+      "intent_name": "duck_defining_traits",
+      "training_phrases": [
+        "what makes a duck a duck",
+        "what are the characteristics of ducks",
+        "what are duck characteristics",
+        "how can i tell if a bird is a duck",
+        "what are the features of a duck",
+        "duck characteristics"
+      ],
+      "responses": [
+        "Ducks typically have a broad, flattened bill, webbed feet, a compact body, a shorter neck than swans or geese, and dense water-shedding plumage. Exact traits vary between species, so not every duck fits the classic picture."
+      ]
+    },
+    {
+      "intent_name": "duck_sex_names",
+      "training_phrases": [
+        "what is a male duck called",
+        "what is a female duck called",
+        "what is a drake",
+        "what is a hen duck",
+        "what do you call a male duck",
+        "what do you call a female duck",
+        "drake vs hen",
+        "what is a drake duck"
+      ],
+      "responses": [
+        "A male duck is called a drake and a female duck is called a hen. Baby ducks are ducklings."
+      ]
+    },
+    {
+      "intent_name": "duck_group_name",
+      "training_phrases": [
+        "what is a group of ducks called",
+        "what do you call a group of ducks",
+        "what is a flock of ducks called",
+        "collective noun for ducks",
+        "group of ducks"
+      ],
+      "responses": [
+        "A group of ducks is usually just called a flock. A group resting or swimming on the water is often called a raft or a paddling."
       ]
     },
     {
@@ -114,21 +173,524 @@
         "why are ducks colorful",
         "why do male ducks look different",
         "why are male ducks colorful",
-        "what color are ducks",
-        "why do ducks have feathers",
-        "why are duck feathers waterproof",
-        "what are duck feathers for",
-        "why do ducks have bills",
-        "what is a duck bill for",
-        "why do ducks have webbed feet",
-        "what are duck feet for"
+        "what color are ducks"
       ],
       "responses": [
-        "Duck feathers provide insulation, help with swimming, and can be waterproofed with oil from a special gland.",
         "Many male ducks have brighter colors than females, especially during breeding season. These colors can help attract mates.",
-        "A duck's bill is adapted to the way it feeds. Different species have different bill shapes suited to different foods.",
-        "Webbed feet help ducks push against water efficiently when swimming.",
         "Duck colors vary enormously between species. Some are brightly colored while others have mostly brown, gray, or black plumage."
+      ]
+    },
+    {
+      "intent_name": "duck_gender_tell",
+      "training_phrases": [
+        "how do i tell a male duck from a female duck",
+        "how can you tell if a duck is male or female",
+        "how to sex a duck",
+        "are male and female ducks different",
+        "how to tell drake from hen"
+      ],
+      "responses": [
+        "In many wild species, males are brighter and females are duller brown. In mallard-type domestic ducks, females give the loud classic quack while males make a quieter raspy sound, and drakes have a curled feather on the tail. Some breeds look alike, so a vet or experienced keeper may be needed to be sure."
+      ]
+    },
+    {
+      "intent_name": "duck_species_count",
+      "training_phrases": [
+        "how many types of ducks are there",
+        "what species of ducks are there",
+        "how many species of ducks are there",
+        "how many kinds of ducks are there",
+        "how many duck species exist",
+        "how many different ducks are there",
+        "are there different kinds of ducks",
+        "what are some types of ducks",
+        "name some duck species"
+      ],
+      "responses": [
+        "It depends on who is counting and which birds count as ducks, but the usual range is roughly 120 to 170 species. One recent checklist lists about 137 duck species within a family of 174 species that also includes geese and swans."
+      ]
+    },
+    {
+      "intent_name": "duck_all_same",
+      "training_phrases": [
+        "are all ducks the same",
+        "do all ducks look the same",
+        "are all ducks alike"
+      ],
+      "responses": [
+        "Nope! Ducks are a diverse group of birds. Different species have evolved for different habitats and ways of finding food."
+      ]
+    },
+    {
+      "intent_name": "duck_types_groups",
+      "training_phrases": [
+        "what are the main groups of ducks",
+        "what are the different types of ducks",
+        "how are ducks grouped",
+        "duck groups",
+        "categories of ducks",
+        "what are the duck families"
+      ],
+      "responses": [
+        "Ducks are often sorted into groups such as dabbling ducks, diving ducks, sea ducks, perching ducks, whistling ducks, stiff-tailed ducks, mergansers, and shelducks. The groups reflect how they feed, where they live, and how they are related."
+      ]
+    },
+    {
+      "intent_name": "duck_mallard",
+      "training_phrases": [
+        "what is a mallard",
+        "tell me about mallards",
+        "mallard facts",
+        "what does a mallard look like",
+        "are mallards common",
+        "tell me about the mallard duck"
+      ],
+      "responses": [
+        "Mallards are one of the most widely recognized duck species. Breeding males have a green head, white neck ring, and yellow bill, while females are mostly mottled brown with an orange-ish bill. Mallards are the ancestors of most domestic duck breeds."
+      ]
+    },
+    {
+      "intent_name": "duck_wood_duck",
+      "training_phrases": [
+        "what is a wood duck",
+        "tell me about wood ducks",
+        "wood duck facts",
+        "do wood ducks nest in trees",
+        "where do wood ducks nest"
+      ],
+      "responses": [
+        "Wood ducks are perching ducks of wooded wetlands in North America. Males are strikingly patterned, and the birds nest in tree cavities or nest boxes near water."
+      ]
+    },
+    {
+      "intent_name": "duck_wood_duck_jump",
+      "training_phrases": [
+        "how do wood duck ducklings leave the nest",
+        "do ducklings jump from trees",
+        "how do ducklings get out of a tree nest",
+        "how do baby wood ducks get down"
+      ],
+      "responses": [
+        "Wood duck ducklings leave their tree nest within about a day of hatching. Their mother calls from the ground or water, and the ducklings leap out and land safely thanks to their light weight and downy bodies."
+      ]
+    },
+    {
+      "intent_name": "duck_muscovy",
+      "training_phrases": [
+        "what is a muscovy duck",
+        "tell me about muscovy ducks",
+        "are muscovy ducks real ducks",
+        "muscovy duck facts",
+        "where do muscovy ducks come from",
+        "are muscovy ducks mallards"
+      ],
+      "responses": [
+        "Muscovy ducks are native to Central and South America and have been domesticated. They are not descended from mallards. Adults have red, fleshy skin on the face, make hissing and trilling sounds rather than loud quacks, and can perch and roost in trees."
+      ]
+    },
+    {
+      "intent_name": "duck_dabbling_ducks",
+      "training_phrases": [
+        "what are dabbling ducks",
+        "what is a dabbling duck",
+        "dabbling duck examples",
+        "what is a surface feeding duck"
+      ],
+      "responses": [
+        "Dabbling ducks, such as mallards, pintails, and teal, feed mostly at the water's surface or by tipping forward to reach food below. They can usually launch into flight almost straight up from the water."
+      ]
+    },
+    {
+      "intent_name": "duck_diving_ducks",
+      "training_phrases": [
+        "what are diving ducks",
+        "what is a diving duck",
+        "diving duck examples",
+        "name some diving ducks"
+      ],
+      "responses": [
+        "Diving ducks, such as canvasbacks, redheads, and scaup, dive underwater for food like plants, mollusks, and small animals. Their legs sit farther back on the body, which helps in diving but makes walking awkward."
+      ]
+    },
+    {
+      "intent_name": "duck_dabbling_vs_diving",
+      "training_phrases": [
+        "difference between dabbling and diving ducks",
+        "dabbling ducks vs diving ducks",
+        "how are dabbling ducks different from diving ducks",
+        "dabbling vs diving ducks"
+      ],
+      "responses": [
+        "Dabbling ducks feed at or just below the surface and can take off almost vertically. Diving ducks go fully underwater to feed and usually need a running start across the water to take off."
+      ]
+    },
+    {
+      "intent_name": "duck_sea_ducks",
+      "training_phrases": [
+        "what are sea ducks",
+        "what is a sea duck",
+        "tell me about sea ducks",
+        "what are scoters",
+        "what is a long tailed duck"
+      ],
+      "responses": [
+        "Sea ducks, including eiders, scoters, long-tailed ducks, goldeneyes, and mergansers, spend much of the year on coastal waters or large lakes. Many are strong divers and nest in northern regions."
+      ]
+    },
+    {
+      "intent_name": "duck_eider",
+      "training_phrases": [
+        "what is an eider",
+        "what is an eider duck",
+        "what is eider down",
+        "tell me about eider ducks"
+      ],
+      "responses": [
+        "Eiders are large sea ducks of cold northern coasts. Females line their nests with soft, insulating down plucked from their own breast, which is the source of eiderdown."
+      ]
+    },
+    {
+      "intent_name": "duck_merganser",
+      "training_phrases": [
+        "what is a merganser",
+        "tell me about mergansers",
+        "what duck has a serrated bill",
+        "what are sawbill ducks"
+      ],
+      "responses": [
+        "Mergansers are slim, diving ducks with narrow bills lined with tooth-like serrations. They mainly eat fish and other aquatic animals."
+      ]
+    },
+    {
+      "intent_name": "duck_whistling_ducks",
+      "training_phrases": [
+        "what are whistling ducks",
+        "what is a whistling duck",
+        "tell me about tree ducks",
+        "what is a tree duck"
+      ],
+      "responses": [
+        "Whistling ducks, also called tree ducks, are long-legged, long-necked ducks of warm regions. Males and females look alike, and they are named for their whistling calls rather than quacks."
+      ]
+    },
+    {
+      "intent_name": "duck_mandarin",
+      "training_phrases": [
+        "what is a mandarin duck",
+        "tell me about mandarin ducks",
+        "mandarin duck facts",
+        "are mandarin ducks monogamous"
+      ],
+      "responses": [
+        "Mandarin ducks are ornate perching ducks native to East Asia. In East Asian culture they symbolize fidelity, but like many ducks, their pair bonds are generally best described as seasonal rather than lifelong."
+      ]
+    },
+    {
+      "intent_name": "duck_largest",
+      "training_phrases": [
+        "what is the biggest duck",
+        "what is the largest duck",
+        "what is the largest duck species",
+        "which duck is the heaviest",
+        "what is the biggest duck species"
+      ],
+      "responses": [
+        "'Biggest' depends on whether you mean weight, length, or wingspan. Among wild ducks, large eiders and the heavy, flightless steamer ducks of South America are standouts, while some domestic breeds such as Muscovy and Pekin can outweigh most wild ducks."
+      ]
+    },
+    {
+      "intent_name": "duck_smallest",
+      "training_phrases": [
+        "what is the smallest duck",
+        "what is the tiniest duck",
+        "smallest duck species",
+        "what is the smallest duck species"
+      ],
+      "responses": [
+        "Among the smallest ducks are teal, such as the green-winged teal, and the pygmy-geese, which are really tiny ducks despite their name."
+      ]
+    },
+    {
+      "intent_name": "duck_most_common",
+      "training_phrases": [
+        "what is the most common duck",
+        "which duck is most common",
+        "most widespread duck",
+        "what is the most common type of duck"
+      ],
+      "responses": [
+        "The mallard is one of the most widespread and abundant ducks in the world, found across much of the Northern Hemisphere."
+      ]
+    },
+    {
+      "intent_name": "duck_teal",
+      "training_phrases": [
+        "what is a teal",
+        "tell me about teal ducks",
+        "green winged teal",
+        "what is a teal duck"
+      ],
+      "responses": [
+        "Teal are small dabbling ducks. They are fast, agile fliers that often gather in tight flocks on shallow wetlands."
+      ]
+    },
+    {
+      "intent_name": "duck_bill",
+      "training_phrases": [
+        "why do ducks have bills",
+        "what is a duck bill for",
+        "what is a duck bill made of",
+        "are duck bills sensitive",
+        "can ducks feel with their bills"
+      ],
+      "responses": [
+        "A duck's bill is adapted to the way it feeds. Different species have different bill shapes suited to different foods.",
+        "Duck bills are not just tools for grabbing food. They contain touch-sensitive nerve endings that help ducks feel for food in murky water."
+      ]
+    },
+    {
+      "intent_name": "duck_filter_feeding",
+      "training_phrases": [
+        "how do ducks filter food",
+        "how do ducks strain food from water",
+        "what are the ridges on a duck bill",
+        "what are lamellae",
+        "how do ducks filter feed"
+      ],
+      "responses": [
+        "Many ducks have comb-like ridges called lamellae along the edges of the bill. The duck takes in water and mud, then pushes the water out with its tongue while the lamellae trap food such as seeds and tiny invertebrates."
+      ]
+    },
+    {
+      "intent_name": "duck_teeth",
+      "training_phrases": [
+        "do ducks have teeth",
+        "does a duck have teeth",
+        "why dont ducks have teeth",
+        "do duck bills have teeth",
+        "why don't ducks have teeth"
+      ],
+      "responses": [
+        "Ducks have no true teeth. Many have comb-like ridges (lamellae) on their bills for straining food, and mergansers have tooth-like serrations for gripping slippery fish."
+      ]
+    },
+    {
+      "intent_name": "duck_webbed_feet",
+      "training_phrases": [
+        "why do ducks have webbed feet",
+        "what are duck feet for",
+        "how do webbed feet work",
+        "do all ducks have webbed feet"
+      ],
+      "responses": [
+        "Webbed feet help ducks push against water efficiently when swimming. The skin between the front toes acts like a paddle."
+      ]
+    },
+    {
+      "intent_name": "duck_cold_feet",
+      "training_phrases": [
+        "why dont ducks feet get cold",
+        "do ducks get cold feet",
+        "how do ducks stand on ice",
+        "can ducks feel cold in their feet",
+        "why dont ducks freeze",
+        "why don't ducks feet get cold",
+        "why don't ducks freeze"
+      ],
+      "responses": [
+        "Ducks have a heat-exchange system in their legs: warm blood heading to the feet passes close to cooler blood returning to the body, so heat is recaptured instead of being lost. Their feet stay cool, which limits heat loss, without the bird being unable to feel them."
+      ]
+    },
+    {
+      "intent_name": "duck_knees",
+      "training_phrases": [
+        "do ducks have knees",
+        "why do duck legs bend backwards",
+        "where are a ducks knees",
+        "why do duck knees bend backwards"
+      ],
+      "responses": [
+        "Ducks do have knees, but they are hidden under the feathers close to the body. The joint that looks like a backward knee is actually the ankle."
+      ]
+    },
+    {
+      "intent_name": "duck_feathers_purpose",
+      "training_phrases": [
+        "why do ducks have feathers",
+        "what are duck feathers for",
+        "what types of feathers do ducks have",
+        "how many types of feathers do ducks have"
+      ],
+      "responses": [
+        "Duck feathers provide insulation, help with swimming and flight, and can be waterproofed with oil from a special gland. Soft down feathers sit close to the skin for warmth, while sleeker contour feathers form the outer layer."
+      ]
+    },
+    {
+      "intent_name": "duck_waterproof_how",
+      "training_phrases": [
+        "why are duck feathers waterproof",
+        "how are ducks waterproof",
+        "how do ducks stay dry",
+        "how do duck feathers repel water",
+        "are ducks waterproof"
+      ],
+      "responses": [
+        "Duck feathers are highly water-resistant. The overlapping structure of the feathers traps air and, together with oil spread during preening, helps water bead off. Strictly speaking they are water-resistant rather than perfectly waterproof."
+      ]
+    },
+    {
+      "intent_name": "duck_preen_gland",
+      "training_phrases": [
+        "what is the preen gland",
+        "what is the uropygial gland",
+        "where does duck oil come from",
+        "what oil do ducks use on feathers",
+        "what is a preen gland"
+      ],
+      "responses": [
+        "The preen gland, or uropygial gland, sits at the base of a duck's tail. Ducks rub their bill on it and spread the oily secretion across their feathers to condition them and help repel water."
+      ]
+    },
+    {
+      "intent_name": "duck_down",
+      "training_phrases": [
+        "what is duck down",
+        "why is down warm",
+        "how do ducks stay warm in water",
+        "how do ducks keep warm",
+        "how do ducks stay warm"
+      ],
+      "responses": [
+        "Down is a layer of soft, fluffy feathers that traps air close to the body, which insulates ducks even when they swim in cold water. A layer of body fat helps too."
+      ]
+    },
+    {
+      "intent_name": "duck_molt",
+      "training_phrases": [
+        "do ducks molt",
+        "when do ducks molt",
+        "do ducks lose their feathers",
+        "why do ducks lose feathers",
+        "can ducks fly while molting",
+        "why cant ducks fly in summer",
+        "why can't ducks fly in summer"
+      ],
+      "responses": [
+        "Yes, ducks molt, replacing worn feathers. Many species lose their main flight feathers all at once after breeding and are unable to fly for a few weeks, so they often hide in sheltered wetlands during that time."
+      ]
+    },
+    {
+      "intent_name": "duck_eclipse",
+      "training_phrases": [
+        "what is eclipse plumage",
+        "why do male ducks lose their colors",
+        "why do drake ducks look brown in summer",
+        "why do male mallards look like females",
+        "why does my drake look dull"
+      ],
+      "responses": [
+        "After breeding, many male ducks molt into a dull, female-like 'eclipse' plumage. It provides camouflage while the birds are temporarily flightless. They molt back into bright colors later, often by autumn."
+      ]
+    },
+    {
+      "intent_name": "duck_speculum",
+      "training_phrases": [
+        "what is a speculum",
+        "what is the colored patch on a duck wing",
+        "what is the blue patch on a mallard",
+        "what is the speculum on a duck"
+      ],
+      "responses": [
+        "A speculum is the patch of often iridescent color on the secondary wing feathers of many ducks. It's a handy identification clue, such as the purplish-blue patch edged in white on a mallard."
+      ]
+    },
+    {
+      "intent_name": "duck_eyesight",
+      "training_phrases": [
+        "how good is duck eyesight",
+        "can ducks see well",
+        "do ducks see color",
+        "can ducks see at night",
+        "where are a ducks eyes",
+        "can ducks see behind them",
+        "do ducks have good vision"
+      ],
+      "responses": [
+        "Ducks have eyes on the sides of their heads, giving a very wide field of view for spotting danger. Like most birds, they see color well and probably some ultraviolet light too. Many ducks feed and travel at dusk or night, so their vision works in dim light, though how it compares to nocturnal birds varies by species."
+      ]
+    },
+    {
+      "intent_name": "duck_eyelid",
+      "training_phrases": [
+        "do ducks blink",
+        "do ducks have a third eyelid",
+        "how do ducks see underwater",
+        "can ducks open their eyes underwater"
+      ],
+      "responses": [
+        "Ducks have a clear third eyelid, called a nictitating membrane, that sweeps across the eye. It protects the eye and lets many ducks keep seeing while underwater."
+      ]
+    },
+    {
+      "intent_name": "duck_hearing",
+      "training_phrases": [
+        "can ducks hear",
+        "how good is duck hearing",
+        "do ducks have ears",
+        "where are a ducks ears"
+      ],
+      "responses": [
+        "Ducks hear well, though they have no external ears. Their ear openings sit behind and below the eyes, covered by small feathers."
+      ]
+    },
+    {
+      "intent_name": "duck_taste_smell",
+      "training_phrases": [
+        "can ducks taste",
+        "can ducks smell",
+        "do ducks have a sense of smell",
+        "do ducks have taste buds"
+      ],
+      "responses": [
+        "Ducks have taste buds and a working sense of smell, but touch is especially important for them, since the bill can feel food in muddy water. Exactly how much they rely on smell and taste varies by species and is less well studied."
+      ]
+    },
+    {
+      "intent_name": "duck_wings",
+      "training_phrases": [
+        "how big are duck wings",
+        "what is a duck wingspan",
+        "how long are duck wings",
+        "how do duck wings work",
+        "what is a mallard wingspan"
+      ],
+      "responses": [
+        "Ducks have relatively short, pointed wings that beat quickly to power fast flight. Wingspan varies by species; mallards average roughly 36 inches (about 90 cm)."
+      ]
+    },
+    {
+      "intent_name": "duck_size",
+      "training_phrases": [
+        "how big is a duck",
+        "how much does a duck weigh",
+        "how heavy is a duck",
+        "how long is a duck",
+        "what size are ducks"
+      ],
+      "responses": [
+        "Size varies a lot. A mallard typically weighs roughly 2 to 3 pounds (about 1 to 1.4 kg), while teal are much smaller and some eiders and domestic breeds are much bigger."
+      ]
+    },
+    {
+      "intent_name": "duck_salt_glands",
+      "training_phrases": [
+        "how do ducks drink salt water",
+        "do ducks have salt glands",
+        "can ducks drink seawater",
+        "how do sea ducks handle salt"
+      ],
+      "responses": [
+        "Sea ducks and some other ducks have salt glands near the eyes and bill that remove excess salt from the blood. The salt drains out through the nostrils, so these ducks can live on salty water."
       ]
     },
     {
@@ -136,66 +698,851 @@
       "training_phrases": [
         "what do ducks eat",
         "what can ducks eat",
-        "what do ducklings eat",
-        "what is a duck's favorite food",
         "what do ducks eat in the wild",
-        "can ducks eat bread",
-        "should ducks eat bread",
-        "what should I feed a duck",
-        "what food is safe for ducks",
-        "do ducks eat fish",
-        "do ducks eat insects",
-        "do ducks eat plants",
-        "do ducks eat grass"
+        "what is a duck's favorite food",
+        "what is the diet of a duck",
+        "what do ducks feed on"
       ],
       "responses": [
         "Ducks can eat a variety of foods depending on their species, including plants, seeds, insects, small aquatic animals, and other natural foods.",
-        "Bread isn't a good staple food for ducks because it provides lots of calories without much nutrition. Natural foods and appropriate duck feed are better.",
-        "Many ducks eat plants, seeds, insects, and small aquatic creatures. Their diet depends on the species and environment.",
-        "Ducklings need nutritious food appropriate for their age. Their diet is different from simply feeding them human snacks."
+        "Many ducks eat plants, seeds, insects, and small aquatic creatures. Their diet depends on the species and environment."
       ]
     },
     {
-      "intent_name": "duck_species",
+      "intent_name": "duck_bread",
       "training_phrases": [
-        "how many types of ducks are there",
-        "what species of ducks are there",
-        "what are some types of ducks",
-        "name some duck species",
-        "what is the most common duck",
-        "what is the biggest duck",
-        "what is the smallest duck",
-        "are all ducks the same",
-        "are there different kinds of ducks",
-        "what is a mallard",
-        "tell me about mallards"
+        "can ducks eat bread",
+        "should ducks eat bread",
+        "is bread bad for ducks",
+        "why is bread bad for ducks",
+        "can i feed ducks bread",
+        "is it ok to feed ducks bread",
+        "do ducks like bread"
       ],
       "responses": [
-        "There are many different duck species around the world, and they come in a surprising variety of sizes, colors, and behaviors.",
-        "Mallards are one of the most widely recognized duck species. The males usually have a green head, while females are mostly mottled brown.",
-        "Nope! Ducks are a diverse group of birds. Different species have evolved for different habitats and ways of finding food.",
-        "Duck species can look dramatically different. Some live mostly on freshwater, while others are adapted to coastal or marine environments."
+        "Bread isn't a good food for ducks. It's high in carbohydrates and low in the nutrients ducks need, and it can contribute to poor health and dirty water. Natural foods and appropriate duck feed are better."
+      ]
+    },
+    {
+      "intent_name": "duck_safe_foods",
+      "training_phrases": [
+        "what should I feed a duck",
+        "what food is safe for ducks",
+        "what can i feed ducks at the park",
+        "what are good foods for ducks",
+        "what to feed wild ducks",
+        "healthy foods for ducks"
+      ],
+      "responses": [
+        "If feeding is allowed where you are, wildlife groups suggest foods closer to a natural diet, such as cracked corn, oats, peas, or chopped leafy greens, in small amounts. For pet ducks, a complete waterfowl or duck feed is best. Many wildlife experts say it's best not to feed wild ducks at all."
+      ]
+    },
+    {
+      "intent_name": "duck_feed_wild_ok",
+      "training_phrases": [
+        "should i feed wild ducks",
+        "is it ok to feed wild ducks",
+        "is feeding ducks bad",
+        "why shouldnt you feed ducks",
+        "is it illegal to feed ducks",
+        "why shouldn't you feed ducks"
+      ],
+      "responses": [
+        "Wildlife experts generally prefer that wild ducks find their own food. Handouts can lead to poor nutrition, crowding, polluted water, and ducks that depend on people. Feeding wildlife is restricted in some places, so check local rules."
+      ]
+    },
+    {
+      "intent_name": "duck_foods_avoid",
+      "training_phrases": [
+        "what should ducks not eat",
+        "what foods are bad for ducks",
+        "can ducks eat chocolate",
+        "can ducks eat popcorn",
+        "can ducks eat chips",
+        "can ducks eat crackers",
+        "can ducks eat moldy food"
+      ],
+      "responses": [
+        "Ducks shouldn't eat bread, crackers, chips, popcorn, sweets, chocolate, salty or processed foods, or anything moldy. These can cause health problems and offer little or no nutrition."
+      ]
+    },
+    {
+      "intent_name": "duck_angel_wing",
+      "training_phrases": [
+        "what is angel wing",
+        "what causes angel wing",
+        "do ducks get angel wing",
+        "why does my duck have a twisted wing",
+        "angel wing in ducks"
+      ],
+      "responses": [
+        "Angel wing is a deformity in which the last joint of the wing twists and the flight feathers stick out, often leaving the bird unable to fly. Its exact cause isn't fully studied, but it is strongly linked to unbalanced, high-calorie diets and fast growth. Young birds caught early may improve with help from a wildlife rehabilitator or vet."
+      ]
+    },
+    {
+      "intent_name": "duck_eat_fish",
+      "training_phrases": [
+        "do ducks eat fish"
+      ],
+      "responses": [
+        "Some do. Mergansers and other fish-eating ducks catch fish, while most ducks eat mainly plants and small invertebrates and only occasionally take small fish."
+      ]
+    },
+    {
+      "intent_name": "duck_eat_insects",
+      "training_phrases": [
+        "do ducks eat insects",
+        "do ducks eat bugs",
+        "do ducks eat worms"
+      ],
+      "responses": [
+        "Yes. Insects and other invertebrates are an important source of protein for many ducks, especially for growing ducklings and breeding females."
+      ]
+    },
+    {
+      "intent_name": "duck_eat_plants",
+      "training_phrases": [
+        "do ducks eat plants",
+        "do ducks eat grass",
+        "do ducks eat vegetables",
+        "do ducks eat seeds"
+      ],
+      "responses": [
+        "Yes. Many ducks eat aquatic plants, seeds, grains, and tender grass or other greens, depending on the species and what is available."
+      ]
+    },
+    {
+      "intent_name": "duck_garden_pests",
+      "training_phrases": [
+        "do ducks eat slugs",
+        "do ducks eat snails",
+        "are ducks good for garden pest control",
+        "do ducks eat mosquito larvae",
+        "will ducks eat my plants"
+      ],
+      "responses": [
+        "Ducks eat slugs, snails, and many insects, which is why some gardeners keep them. They can also trample seedlings and nibble tender plants, so they are better pest helpers than guaranteed pest control."
+      ]
+    },
+    {
+      "intent_name": "duck_drinking_water",
+      "training_phrases": [
+        "do ducks need water to eat",
+        "why do ducks dunk their food in water",
+        "do ducks drink water",
+        "how much water do ducks need"
+      ],
+      "responses": [
+        "Ducks swallow food along with water, and many dunk their bills while eating. They also use water to clear their nostrils and eyes, so domestic ducks should always have water deep enough to dip their whole bill."
+      ]
+    },
+    {
+      "intent_name": "duck_tip_up_feeding",
+      "training_phrases": [
+        "why do ducks stick their heads underwater",
+        "why do ducks tip upside down",
+        "why do ducks put their butts up",
+        "what is upending",
+        "how do ducks forage in water"
+      ],
+      "responses": [
+        "Dabbling ducks tip forward, or 'up-end', with their tail in the air to reach plants and animals on the bottom in shallow water, without needing to dive."
+      ]
+    },
+    {
+      "intent_name": "duck_gizzard_grit",
+      "training_phrases": [
+        "what is a duck gizzard",
+        "do ducks eat stones",
+        "why do ducks eat gravel",
+        "do ducks need grit"
+      ],
+      "responses": [
+        "Ducks have no teeth, so a muscular stomach called a gizzard grinds up food. They swallow small bits of grit or gravel that help with the grinding."
+      ]
+    },
+    {
+      "intent_name": "duck_quack",
+      "training_phrases": [
+        "why do ducks quack",
+        "why do ducks quack so much",
+        "what does a duck quack mean",
+        "what does quacking mean",
+        "do ducks quack",
+        "do ducks really quack",
+        "does a duck quack",
+        "why does a duck quack"
+      ],
+      "responses": [
+        "Quacking is a call used to keep in contact, to call ducklings, and to sound alarm. The classic loud quack is mostly a female mallard (and domestic descendant) sound. Many other duck species make very different noises."
+      ]
+    },
+    {
+      "intent_name": "duck_female_quack",
+      "training_phrases": [
+        "which ducks quack",
+        "do male ducks quack",
+        "do female ducks quack",
+        "do only female ducks quack",
+        "who quacks louder male or female duck"
+      ],
+      "responses": [
+        "The loud, classic quack is typically made by female mallards and their domestic relatives. Male mallards make quieter, raspy calls."
+      ]
+    },
+    {
+      "intent_name": "duck_male_sounds",
+      "training_phrases": [
+        "what sound does a male duck make",
+        "do male ducks whistle",
+        "do ducks whistle",
+        "what sound do drakes make",
+        "do ducks make other sounds besides quacking"
+      ],
+      "responses": [
+        "Males of many species whistle, grunt, or make soft raspy sounds instead of loud quacks. Mallard drakes, for example, give quieter raspy calls."
+      ]
+    },
+    {
+      "intent_name": "duck_communication",
+      "training_phrases": [
+        "how do ducks communicate",
+        "how do ducks talk",
+        "why do ducks make sounds",
+        "do ducks talk to each other",
+        "what sounds do ducks make",
+        "what noises do ducks make"
+      ],
+      "responses": [
+        "Ducks communicate using calls, body movements, and other sounds. Quacking is only one part of their vocabulary!",
+        "Ducks use quacks, whistles, grunts, peeps, and visual signals like head movements and tail wags to communicate."
+      ]
+    },
+    {
+      "intent_name": "duck_quack_echo",
+      "training_phrases": [
+        "does a duck quack echo",
+        "do duck quacks echo",
+        "why doesnt a duck quack echo",
+        "is it true a duck quack doesnt echo",
+        "why doesn't a duck quack echo",
+        "is it true a duck quack doesn't echo"
+      ],
+      "responses": [
+        "That's a myth. A duck's quack does echo; the echo can be hard to notice because the sound fades in and out gradually."
+      ]
+    },
+    {
+      "intent_name": "duck_body_language",
+      "training_phrases": [
+        "what does duck body language mean",
+        "how can i tell if a duck is stressed",
+        "how do ducks show aggression",
+        "what does it mean when a duck stretches its neck",
+        "duck body language"
+      ],
+      "responses": [
+        "Ducks signal with posture and movement: stretched necks and alert heads often mean wariness, hissing and lunging mean 'back off', and head-bobbing is common in courtship. The meaning depends on the species and situation."
+      ]
+    },
+    {
+      "intent_name": "duck_head_bobbing",
+      "training_phrases": [
+        "why do ducks bob their heads",
+        "why do ducks nod their heads",
+        "why do ducks bob their heads up and down"
+      ],
+      "responses": [
+        "Head-bobbing is part of social signaling, especially in courtship displays, and can also be part of group communication. The exact meaning depends on context and species."
+      ]
+    },
+    {
+      "intent_name": "duck_tail_wagging",
+      "training_phrases": [
+        "why do ducks wag their tails",
+        "why do ducks shake their tails",
+        "why do ducks wiggle their tails"
+      ],
+      "responses": [
+        "Tail wagging often follows bathing or preening and helps shake off water and settle the feathers. It can also be part of social signaling."
+      ]
+    },
+    {
+      "intent_name": "duck_wing_flapping",
+      "training_phrases": [
+        "why do ducks flap their wings"
+      ],
+      "responses": [
+        "Ducks flap their wings for several reasons, including flying, stretching, displaying themselves, and drying their feathers."
+      ]
+    },
+    {
+      "intent_name": "duck_preening",
+      "training_phrases": [
+        "why do ducks preen",
+        "what is preening",
+        "why do ducks clean their feathers",
+        "how often do ducks preen",
+        "why do ducks groom themselves"
+      ],
+      "responses": [
+        "Preening is how ducks keep their feathers in good shape. They straighten and clean each feather with the bill and spread oil from the preen gland, which keeps plumage tidy, insulating, and water-resistant."
+      ]
+    },
+    {
+      "intent_name": "duck_bathing",
+      "training_phrases": [
+        "do ducks take baths",
+        "why do ducks splash in water",
+        "how do ducks clean themselves",
+        "do ducks like water"
+      ],
+      "responses": [
+        "Ducks love bathing. They splash water over their feathers, then preen and oil them. Regular bathing helps keep feathers clean and working properly."
+      ]
+    },
+    {
+      "intent_name": "duck_rain",
+      "training_phrases": [
+        "do ducks like rain",
+        "do ducks get wet in the rain",
+        "do ducks need shelter from rain",
+        "are ducks ok in the rain"
+      ],
+      "responses": [
+        "Ducks handle rain well thanks to their water-resistant feathers, and rain can make food like worms easier to find. Pet ducks should still have a dry, sheltered place for extreme weather."
+      ]
+    },
+    {
+      "intent_name": "duck_swimming",
+      "training_phrases": [
+        "why do ducks swim",
+        "why can ducks swim",
+        "how do ducks swim"
+      ],
+      "responses": [
+        "Ducks swim well because their webbed feet work like little paddles, their feathers trap air, and their bodies are buoyant."
+      ]
+    },
+    {
+      "intent_name": "duck_diving_ability",
+      "training_phrases": [
+        "how long can ducks stay underwater",
+        "how deep can ducks dive",
+        "how do ducks dive",
+        "can ducks dive",
+        "how long can a duck hold its breath"
+      ],
+      "responses": [
+        "It depends on the species. Dabbling ducks mostly submerge only their head and front half, while diving ducks can stay under for a short time up to about a minute or more. Some sea ducks, such as the long-tailed duck, are among the deepest divers."
+      ]
+    },
+    {
+      "intent_name": "duck_fly",
+      "training_phrases": [
+        "why do ducks fly",
+        "can ducks fly",
+        "do all ducks fly"
+      ],
+      "responses": [
+        "Not all ducks fly equally well. Some species are strong fliers, while others have limited flight or cannot fly.",
+        "Yes, most ducks are strong fliers, and many migrate long distances. A few species and some domestic breeds have lost much of their flight ability."
+      ]
+    },
+    {
+      "intent_name": "duck_flight_speed",
+      "training_phrases": [
+        "how fast can ducks fly",
+        "how fast do ducks fly",
+        "what is the fastest duck",
+        "how fast is a mallard"
+      ],
+      "responses": [
+        "Mallards have been recorded flying at around 55 mph (about 88 km/h), and some other ducks may be faster with a tailwind. Speed depends on the species and conditions."
+      ]
+    },
+    {
+      "intent_name": "duck_flight_altitude",
+      "training_phrases": [
+        "how high can ducks fly",
+        "what altitude do ducks fly at",
+        "how high do ducks fly"
+      ],
+      "responses": [
+        "Ducks usually fly low to moderate heights, but during migration they can climb much higher. A mallard was reportedly struck by an aircraft at about 21,000 feet in 1962."
+      ]
+    },
+    {
+      "intent_name": "duck_v_formation",
+      "training_phrases": [
+        "why do ducks fly in a v",
+        "why do ducks fly in formation",
+        "why do ducks fly in a line",
+        "do ducks fly in v formation"
+      ],
+      "responses": [
+        "Flying in a V or line is thought to help birds save energy and stay in visual contact. The evidence is strongest for geese, but ducks often fly in similar lines and clusters."
+      ]
+    },
+    {
+      "intent_name": "duck_takeoff",
+      "training_phrases": [
+        "how do ducks take off",
+        "how do ducks take off from water",
+        "can ducks take off from land",
+        "why do ducks run on the water to fly"
+      ],
+      "responses": [
+        "Dabbling ducks can spring almost straight up from the water. Diving ducks and heavier species usually run across the surface while flapping before they lift off."
+      ]
+    },
+    {
+      "intent_name": "duck_waddle",
+      "training_phrases": [
+        "why do ducks walk like that",
+        "why do ducks waddle",
+        "how do ducks walk",
+        "why do ducks walk funny"
+      ],
+      "responses": [
+        "Ducks waddle because their legs are set toward the sides of the body, a position that works well for swimming but makes them sway from side to side when walking."
+      ]
+    },
+    {
+      "intent_name": "duck_one_leg",
+      "training_phrases": [
+        "why do ducks stand on one leg",
+        "why do ducks sleep on one foot",
+        "why do ducks tuck a leg"
+      ],
+      "responses": [
+        "Standing on one leg is thought to help ducks conserve body heat by tucking one foot into their feathers."
+      ]
+    },
+    {
+      "intent_name": "duck_social",
+      "training_phrases": [
+        "are ducks social",
+        "are ducks social animals",
+        "do ducks live in groups",
+        "do ducks live in flocks",
+        "do ducks live alone"
+      ],
+      "responses": [
+        "Ducks are social animals and often spend time in groups, although their behavior varies between species."
+      ]
+    },
+    {
+      "intent_name": "duck_aggression",
+      "training_phrases": [
+        "are ducks aggressive",
+        "do ducks fight",
+        "why are ducks aggressive",
+        "do ducks attack people",
+        "why is my duck aggressive"
+      ],
+      "responses": [
+        "Ducks are usually wary rather than aggressive, but they can be territorial or protective during breeding season, and ducks used to being fed may get pushy. Give them space, especially mothers with ducklings."
+      ]
+    },
+    {
+      "intent_name": "duck_follow",
+      "training_phrases": [
+        "why do ducks follow each other",
+        "why do ducks walk in a line",
+        "why do ducks stay together"
+      ],
+      "responses": [
+        "Ducks stay together because groups are safer: more eyes spot predators sooner, and following others helps find food and safe places."
+      ]
+    },
+    {
+      "intent_name": "duck_sleep",
+      "training_phrases": [
+        "how do ducks sleep",
+        "where do ducks sleep",
+        "where do ducks sleep at night",
+        "do ducks sleep",
+        "do ducks sleep with one eye open",
+        "do ducks sleep standing up",
+        "do ducks sleep on water"
+      ],
+      "responses": [
+        "Many ducks sleep while floating on water or resting in safe places. Some can even rest one side of their brain at a time while keeping one eye open, especially ducks at the edge of a group."
+      ]
+    },
+    {
+      "intent_name": "duck_active_night",
+      "training_phrases": [
+        "are ducks nocturnal",
+        "do ducks fly at night",
+        "do ducks feed at night",
+        "are ducks active at night"
+      ],
+      "responses": [
+        "Ducks are mostly active by day and at dusk, but many feed at night, especially where they're disturbed, and many migrate at night. Habits vary by species."
+      ]
+    },
+    {
+      "intent_name": "duck_smart",
+      "training_phrases": [
+        "are ducks smart",
+        "are ducks intelligent",
+        "are ducks dumb",
+        "how smart are ducks"
+      ],
+      "responses": [
+        "Ducks can learn, remember patterns, recognize individuals, and show different behaviors depending on their environment. Intelligence is hard to compare across species, so scientists tend to describe specific abilities rather than ranking birds."
+      ]
+    },
+    {
+      "intent_name": "duck_memory",
+      "training_phrases": [
+        "do ducks have good memory",
+        "can ducks remember things",
+        "can ducks learn",
+        "can ducks be trained",
+        "can you train a duck"
+      ],
+      "responses": [
+        "Ducks can learn routes, feeding spots, and routines, and tame ducks can often be trained with treats and consistency. Controlled research on duck learning is more limited than for some other birds."
+      ]
+    },
+    {
+      "intent_name": "duck_imprinting",
+      "training_phrases": [
+        "what is imprinting",
+        "do ducklings imprint",
+        "why do ducklings follow humans",
+        "can ducklings imprint on people",
+        "what do ducklings think their mother is"
+      ],
+      "responses": [
+        "Imprinting is when newly hatched ducklings learn to follow the first moving thing they see, normally their mother. If they hatch without her, they can sometimes imprint on a person or even an object."
+      ]
+    },
+    {
+      "intent_name": "duck_recognize_people",
+      "training_phrases": [
+        "do ducks recognize people",
+        "can ducks recognize humans",
+        "do ducks remember me",
+        "do ducks remember faces"
+      ],
+      "responses": [
+        "Some ducks can become accustomed to humans, especially when they regularly encounter people, and may link a person with food or safety. Wild ducks should still be given plenty of space."
+      ]
+    },
+    {
+      "intent_name": "duck_feelings",
+      "training_phrases": [
+        "do ducks have feelings",
+        "do ducks feel emotions",
+        "do ducks feel pain",
+        "do ducks get sad"
+      ],
+      "responses": [
+        "Ducks feel pain and show signs of fear and stress, and they form social bonds. Scientists are cautious about describing the details of animals' emotions, so it's best to say ducks have real experiences without assuming they feel just like we do."
+      ]
+    },
+    {
+      "intent_name": "duck_navigation",
+      "training_phrases": [
+        "how do ducks navigate",
+        "how do ducks know where to migrate",
+        "how do ducks find their way home",
+        "how do ducks find their way"
+      ],
+      "responses": [
+        "Migrating ducks are thought to combine landmarks, the position of the sun and stars, the Earth's magnetic field, and experience. Young birds often learn routes by following adults. The details vary and are still being studied."
+      ]
+    },
+    {
+      "intent_name": "duck_sameness",
+      "training_phrases": [
+        "can ducks understand concepts",
+        "can ducklings tell same from different",
+        "do ducks understand abstract ideas",
+        "duck cognition experiments"
+      ],
+      "responses": [
+        "In one well-known experiment, ducklings that imprinted on a pair of objects that were the same or different later preferred new pairs with the same relationship. That suggests ducklings can pick up abstract concepts very early, though more research is needed."
+      ]
+    },
+    {
+      "intent_name": "duck_friendly",
+      "training_phrases": [
+        "are ducks friendly",
+        "are ducks nice",
+        "are ducks good with people",
+        "are ducks affectionate"
+      ],
+      "responses": [
+        "Some tame ducks can be quite friendly, but wild ducks are not pets and do best when given space."
+      ]
+    },
+    {
+      "intent_name": "duck_curious",
+      "training_phrases": [
+        "are ducks curious"
+      ],
+      "responses": [
+        "Individual ducks can behave differently. Some may be bold and curious, while others are more cautious."
+      ]
+    },
+    {
+      "intent_name": "duck_personality_individual",
+      "training_phrases": [
+        "do ducks have personalities"
+      ],
+      "responses": [
+        "Ducks show individual differences, such as boldness or shyness, so it's reasonable to say individual ducks have temperaments."
+      ]
+    },
+    {
+      "intent_name": "duck_courtship",
+      "training_phrases": [
+        "how do ducks court",
+        "how do ducks find a mate",
+        "how do ducks mate",
+        "how do ducks attract mates",
+        "what is duck courtship",
+        "how do ducks choose mates"
+      ],
+      "responses": [
+        "Courtship often begins in autumn or winter. Males show off with displays like head-bobbing, whistles, and preening, and females generally choose their partners."
+      ]
+    },
+    {
+      "intent_name": "duck_mate_for_life",
+      "training_phrases": [
+        "do ducks mate for life",
+        "do ducks have one partner",
+        "are ducks monogamous",
+        "do ducks stay with the same mate",
+        "do ducks pair up"
+      ],
+      "responses": [
+        "Most ducks pair up for a single breeding season and often find a new partner the next year, though some pairs reunite. A few species keep pair bonds for longer."
+      ]
+    },
+    {
+      "intent_name": "duck_breeding_season",
+      "training_phrases": [
+        "when do ducks breed",
+        "when is duck breeding season",
+        "when do ducks lay eggs",
+        "when do ducks nest"
+      ],
+      "responses": [
+        "In temperate regions most wild ducks nest in spring, but timing varies with species and climate."
+      ]
+    },
+    {
+      "intent_name": "duck_nest",
+      "training_phrases": [
+        "where do ducks nest",
+        "how do ducks build nests",
+        "what does a duck nest look like",
+        "where do ducks lay eggs",
+        "how do ducks make a nest"
+      ],
+      "responses": [
+        "Many ducks nest on the ground, in a shallow hollow hidden in vegetation near water, lined with plants and down the female plucks from her breast. Some species, like wood ducks, nest in tree cavities or nest boxes."
+      ]
+    },
+    {
+      "intent_name": "duck_eggs",
+      "training_phrases": [
+        "how many eggs do ducks lay",
+        "how many eggs does a duck lay at once",
+        "what color are duck eggs",
+        "how many eggs in a clutch",
+        "how big are duck eggs"
+      ],
+      "responses": [
+        "A wild mallard typically lays about 8 to 13 eggs in a clutch. Duck eggs are usually pale cream, green, or blue-white, and the number and color vary by species."
+      ]
+    },
+    {
+      "intent_name": "duck_egg_laying_domestic",
+      "training_phrases": [
+        "how many eggs does a domestic duck lay per year",
+        "do pet ducks lay eggs",
+        "do ducks lay eggs every day",
+        "do female ducks lay eggs without a male",
+        "can a duck lay eggs without a drake"
+      ],
+      "responses": [
+        "Many domestic ducks lay eggs, and some breeds such as the Khaki Campbell and Indian Runner are known as prolific layers, often 150 to 300 eggs a year depending on breed and care. Eggs laid without a drake are infertile and won't hatch."
+      ]
+    },
+    {
+      "intent_name": "duck_incubation",
+      "training_phrases": [
+        "how long does it take for duck eggs to hatch",
+        "how long do ducks incubate eggs",
+        "how long does a duck sit on eggs",
+        "incubation period for duck eggs"
+      ],
+      "responses": [
+        "Most mallard and common domestic duck eggs hatch after about 28 days of incubation. Muscovy eggs take about 35 days, and other species differ."
+      ]
+    },
+    {
+      "intent_name": "duck_hatching",
+      "training_phrases": [
+        "how are ducklings born",
+        "when do ducklings hatch",
+        "how do ducklings hatch",
+        "how do ducklings get out of the egg"
+      ],
+      "responses": [
+        "Ducklings hatch from eggs. They use a small egg tooth to break out, and the whole clutch usually hatches within about a day of each other, after chirping to each other through the shell."
+      ]
+    },
+    {
+      "intent_name": "duck_parental_care",
+      "training_phrases": [
+        "who takes care of ducklings",
+        "do male ducks help raise ducklings",
+        "do ducks take care of their babies",
+        "how do ducks raise their young",
+        "do father ducks care for ducklings"
+      ],
+      "responses": [
+        "In most duck species, the mother alone incubates the eggs and cares for the ducklings. She keeps them warm, leads them to food and water, and defends them. In some species both parents help."
+      ]
+    },
+    {
+      "intent_name": "duckling_development",
+      "training_phrases": [
+        "how fast do ducklings grow",
+        "how long until ducklings are adults",
+        "how long do ducklings stay with their mother",
+        "when do ducklings become independent"
+      ],
+      "responses": [
+        "Ducklings grow quickly. They feed themselves from day one and usually stay with their mother until they can fly, in the range of a couple of months, depending on the species."
+      ]
+    },
+    {
+      "intent_name": "duckling_fledging",
+      "training_phrases": [
+        "when can ducklings fly",
+        "how long until ducklings can fly",
+        "what does fledging mean",
+        "when do ducklings get feathers"
+      ],
+      "responses": [
+        "Ducklings start out covered in down and get flight feathers over several weeks. Mallard ducklings usually fledge, meaning they can fly, at roughly 6 to 9 weeks old, but timing varies by species."
+      ]
+    },
+    {
+      "intent_name": "duck_brood_parasitism",
+      "training_phrases": [
+        "do ducks lay eggs in other nests",
+        "what is brood parasitism",
+        "why do ducks lay eggs in other ducks nests",
+        "what is dump nesting"
+      ],
+      "responses": [
+        "Some ducks, such as wood ducks and redheads, sometimes lay eggs in other females' nests, which can lead to very crowded nests. It's called brood parasitism or dump nesting."
+      ]
+    },
+    {
+      "intent_name": "duck_nest_camouflage",
+      "training_phrases": [
+        "why are female ducks brown",
+        "why are female ducks dull colored",
+        "why are female mallards brown"
+      ],
+      "responses": [
+        "Females are often mottled brown because that coloring helps them blend into vegetation while sitting on the nest, which protects both her and the eggs."
+      ]
+    },
+    {
+      "intent_name": "duck_nest_protection",
+      "training_phrases": [
+        "how do ducks protect their nests",
+        "why do mother ducks cover their eggs",
+        "what do ducks do when they leave the nest"
+      ],
+      "responses": [
+        "When she leaves the nest to feed, a hen usually covers the eggs with down and vegetation to keep them warm and hidden. Even so, many duck nests are lost to predators or weather."
+      ]
+    },
+    {
+      "intent_name": "duck_survival_ducklings",
+      "training_phrases": [
+        "do all ducklings survive",
+        "how many ducklings survive",
+        "why do so many ducklings die"
+      ],
+      "responses": [
+        "No. Many ducklings don't survive their first weeks because of predators, cold or wet weather, and food shortages. A larger clutch helps make up for those losses."
       ]
     },
     {
       "intent_name": "ducklings",
       "training_phrases": [
         "tell me about ducklings",
-        "what are ducklings",
-        "how are ducklings born",
-        "when do ducklings hatch",
-        "why do ducklings follow their mother",
-        "can ducklings swim",
-        "can baby ducks swim",
-        "what do baby ducks eat",
-        "why are ducklings yellow",
-        "are ducklings born knowing how to swim"
+        "what are ducklings"
       ],
       "responses": [
         "Ducklings are baby ducks, and many species can swim surprisingly soon after hatching.",
-        "Ducklings often stay close to their mother for protection and guidance.",
-        "Many ducklings are covered in soft down rather than the full adult feathering you'll see later in life.",
+        "Many ducklings are covered in soft down rather than the full adult feathering you'll see later in life."
+      ]
+    },
+    {
+      "intent_name": "duckling_swimming",
+      "training_phrases": [
+        "can ducklings swim",
+        "can baby ducks swim",
+        "are ducklings born knowing how to swim"
+      ],
+      "responses": [
         "Ducklings can often walk and swim shortly after hatching, although they still rely heavily on their mother for protection and guidance."
+      ]
+    },
+    {
+      "intent_name": "duckling_following",
+      "training_phrases": [
+        "why do ducklings follow their mother"
+      ],
+      "responses": [
+        "Ducklings often follow their mother closely because staying together provides protection and helps them learn where to find food and shelter."
+      ]
+    },
+    {
+      "intent_name": "duckling_diet",
+      "training_phrases": [
+        "what do ducklings eat",
+        "what do baby ducks eat"
+      ],
+      "responses": [
+        "Wild ducklings forage for tiny insects, plants, and other small invertebrates. Pet ducklings need a proper starter feed made for ducklings, not simply human snacks."
+      ]
+    },
+    {
+      "intent_name": "duckling_color",
+      "training_phrases": [
+        "why are ducklings yellow"
+      ],
+      "responses": [
+        "Many ducklings are yellow because of their soft down coloring, and mallard ducklings are often yellow with dark brown markings. Color varies by species and breed."
+      ]
+    },
+    {
+      "intent_name": "duckling_waterproof",
+      "training_phrases": [
+        "are ducklings waterproof",
+        "can ducklings drown",
+        "can baby ducks get cold in water",
+        "do ducklings need their mother to stay dry"
+      ],
+      "responses": [
+        "Young ducklings can chill quickly if their down gets soaked, and those raised without a mother may not be fully water-resistant yet. Pet ducklings should have warmth and short, supervised swims."
       ]
     },
     {
@@ -206,38 +1553,732 @@
         "what habitat do ducks live in",
         "do ducks live in lakes",
         "do ducks live in rivers",
-        "do ducks live in the ocean",
-        "can ducks live in cities",
-        "where do wild ducks live",
-        "where do ducks sleep at night",
-        "do ducks migrate"
+        "where do wild ducks live"
       ],
       "responses": [
         "Ducks live in many different environments, including lakes, rivers, wetlands, ponds, coastal areas, and even urban parks.",
-        "Different duck species prefer different habitats. Some spend much of their time in freshwater, while others are adapted to coastal environments.",
-        "Many duck species migrate seasonally, traveling between breeding and wintering areas.",
+        "Different duck species prefer different habitats. Some spend much of their time in freshwater, while others are adapted to coastal environments."
+      ]
+    },
+    {
+      "intent_name": "duck_wetlands",
+      "training_phrases": [
+        "what is a wetland",
+        "why are wetlands important to ducks",
+        "what is a marsh",
+        "why do ducks need wetlands"
+      ],
+      "responses": [
+        "Wetlands such as marshes and swamps provide ducks with food, nesting cover, and safe places to rest and molt. They are among the most important habitats for waterfowl."
+      ]
+    },
+    {
+      "intent_name": "duck_saltwater",
+      "training_phrases": [
+        "do ducks live in the ocean",
+        "do ducks live in the sea",
+        "can ducks live in saltwater"
+      ],
+      "responses": [
+        "Some ducks do. Sea ducks spend much of the year on coastal waters and have salt glands that help them handle salty water."
+      ]
+    },
+    {
+      "intent_name": "duck_urban",
+      "training_phrases": [
+        "can ducks live in cities",
+        "do ducks live in city parks"
+      ],
+      "responses": [
         "Ducks can adapt surprisingly well to human environments, which is why you can sometimes find them living around city ponds and parks."
       ]
     },
     {
-      "intent_name": "duck_personality",
+      "intent_name": "duck_migration",
       "training_phrases": [
-        "are ducks friendly",
-        "are ducks smart",
-        "are ducks intelligent",
-        "are ducks social",
-        "do ducks have personalities",
-        "do ducks recognize people",
-        "can ducks recognize humans",
-        "do ducks have feelings",
-        "are ducks curious",
-        "are ducks aggressive"
+        "do ducks migrate",
+        "do all ducks migrate",
+        "do ducks fly south"
       ],
       "responses": [
-        "Ducks can learn, remember patterns, recognize individuals, and show different behaviors depending on their environment.",
-        "Ducks are social animals and often spend time in groups, although their behavior varies between species.",
-        "Individual ducks can behave differently. Some may be bold and curious, while others are more cautious.",
-        "Some ducks can become accustomed to humans, especially when they regularly encounter people, but wild ducks should still be given plenty of space."
+        "Many duck species migrate seasonally, traveling between breeding and wintering areas. Others stay in the same area all year, depending on species and climate."
+      ]
+    },
+    {
+      "intent_name": "duck_why_migrate",
+      "training_phrases": [
+        "why do ducks migrate",
+        "why do ducks fly south for winter",
+        "why do ducks leave in winter"
+      ],
+      "responses": [
+        "Ducks migrate to follow food and open water and to reach good breeding grounds. When ponds freeze and food becomes scarce, many head south."
+      ]
+    },
+    {
+      "intent_name": "duck_migration_timing",
+      "training_phrases": [
+        "when do ducks migrate",
+        "do ducks migrate at night",
+        "what time of year do ducks migrate",
+        "when do ducks fly south"
+      ],
+      "responses": [
+        "Most migratory ducks head toward wintering areas in autumn and return in spring, and many fly at night. Exact timing depends on species, location, and weather."
+      ]
+    },
+    {
+      "intent_name": "duck_flyways",
+      "training_phrases": [
+        "what is a flyway",
+        "what are the flyways",
+        "what are bird flyways in north america",
+        "what are duck flyways"
+      ],
+      "responses": [
+        "A flyway is a broad route that migratory birds follow between breeding and wintering areas. North America is often divided into four main flyways: Atlantic, Mississippi, Central, and Pacific."
+      ]
+    },
+    {
+      "intent_name": "duck_migration_distance",
+      "training_phrases": [
+        "how far do ducks migrate",
+        "how far do ducks fly",
+        "how far can a duck fly in a day"
+      ],
+      "responses": [
+        "Migration distance varies a lot, from short moves between nearby wetlands to journeys of thousands of kilometers. It depends on the species and its breeding and wintering sites."
+      ]
+    },
+    {
+      "intent_name": "duck_winter",
+      "training_phrases": [
+        "what do ducks do in winter",
+        "where do ducks go in winter",
+        "where do ducks go when the pond freezes",
+        "how do ducks survive winter",
+        "do ducks stay in the cold"
+      ],
+      "responses": [
+        "In winter some ducks migrate to warmer areas, while others stay and gather where water stays open. Dense feathers, down, and body fat help them handle the cold."
+      ]
+    },
+    {
+      "intent_name": "duck_lifespan",
+      "training_phrases": [
+        "how long do ducks live",
+        "what is the lifespan of a duck",
+        "how long do wild ducks live",
+        "how long do mallards live",
+        "how old can ducks get",
+        "average duck lifespan"
+      ],
+      "responses": [
+        "Lifespan varies a lot by species and environment. Many wild ducks live only a few years, though birds that survive can live much longer. Domestic ducks often live longer because they are protected from many dangers."
+      ]
+    },
+    {
+      "intent_name": "duck_lifespan_domestic",
+      "training_phrases": [
+        "how long do pet ducks live",
+        "how long do domestic ducks live",
+        "how long do pekin ducks live",
+        "lifespan of a pet duck"
+      ],
+      "responses": [
+        "With good care, pet ducks often live around 8 to 12 years, and sometimes longer. Lifespan varies by breed and living conditions."
+      ]
+    },
+    {
+      "intent_name": "duck_oldest",
+      "training_phrases": [
+        "how old is the oldest duck",
+        "what is the oldest duck ever",
+        "oldest mallard on record",
+        "longest living duck"
+      ],
+      "responses": [
+        "The oldest documented wild mallard, known from a banding record, was at least 27 years old. Reported record ages vary slightly by source."
+      ]
+    },
+    {
+      "intent_name": "duck_predators",
+      "training_phrases": [
+        "what eats ducks",
+        "what are ducks predators",
+        "what are duck predators",
+        "what animals hunt ducks",
+        "who eats duck eggs"
+      ],
+      "responses": [
+        "Ducks and their eggs are eaten by foxes, raccoons, mink, snakes, snapping turtles, large fish, hawks, owls, eagles, and crows, depending on where they live. Ducklings are especially vulnerable."
+      ]
+    },
+    {
+      "intent_name": "duck_defense",
+      "training_phrases": [
+        "how do ducks protect themselves",
+        "how do ducks defend themselves",
+        "how do ducks escape predators",
+        "how do ducks avoid predators"
+      ],
+      "responses": [
+        "Ducks rely on group alertness, camouflage, diving, and quick flight. Mothers may also try to lure predators away from their ducklings."
+      ]
+    },
+    {
+      "intent_name": "duck_avian_flu",
+      "training_phrases": [
+        "do ducks carry bird flu",
+        "can ducks get avian influenza",
+        "what is avian influenza in ducks",
+        "can i get bird flu from ducks"
+      ],
+      "responses": [
+        "Wild waterfowl can carry avian influenza viruses, sometimes without looking sick. Risk to people is generally low, but avoid handling sick or dead birds, wash your hands after contact, and report sick wild birds to your local wildlife agency."
+      ]
+    },
+    {
+      "intent_name": "duck_lead_poisoning",
+      "training_phrases": [
+        "what is lead poisoning in ducks",
+        "why is lead bad for ducks",
+        "what is lead shot",
+        "how do ducks get lead poisoning"
+      ],
+      "responses": [
+        "Ducks can swallow lead shot or fishing weights from lake and marsh bottoms, mistaking them for grit or food. Lead is toxic, which is why many places restrict lead ammunition and tackle."
+      ]
+    },
+    {
+      "intent_name": "duck_botulism",
+      "training_phrases": [
+        "what is avian botulism",
+        "why do ducks die in summer",
+        "what causes botulism in waterfowl"
+      ],
+      "responses": [
+        "Avian botulism is a poisoning caused by a toxin from bacteria that thrive in warm, stagnant, shallow water. Outbreaks can kill many waterfowl in late summer. Report suspected cases to a wildlife agency."
+      ]
+    },
+    {
+      "intent_name": "duck_wild_vs_domestic",
+      "training_phrases": [
+        "what is the difference between wild and domestic ducks",
+        "are domestic ducks different from wild ducks",
+        "can pet ducks survive in the wild",
+        "can domestic ducks live in the wild"
+      ],
+      "responses": [
+        "Domestic ducks are bred for traits like egg-laying, size, and calm temperament, and many are heavier and less able to fly than wild ducks. They often struggle to survive in the wild because they have fewer natural defenses."
+      ]
+    },
+    {
+      "intent_name": "duck_domestic_flight",
+      "training_phrases": [
+        "can domestic ducks fly",
+        "can pet ducks fly",
+        "why cant my duck fly",
+        "can pekin ducks fly",
+        "can muscovy ducks fly",
+        "why can't my duck fly"
+      ],
+      "responses": [
+        "Many heavy domestic breeds, like the Pekin, can barely fly or can't fly at all. Lighter breeds can fly short distances, and Muscovy ducks can also fly."
+      ]
+    },
+    {
+      "intent_name": "duck_release_pet",
+      "training_phrases": [
+        "can i release my pet duck",
+        "should i let my duck go in a pond",
+        "can i release a domestic duck into the wild",
+        "what do i do with an unwanted duck"
+      ],
+      "responses": [
+        "Releasing a domestic duck is usually a bad idea. Many struggle to survive, can spread disease, and may crowd out or hybridize with wild ducks, and release may be illegal. Contact a rescue or sanctuary instead."
+      ]
+    },
+    {
+      "intent_name": "duck_domestication",
+      "training_phrases": [
+        "when were ducks domesticated",
+        "how were ducks domesticated",
+        "are ducks domesticated",
+        "where do domestic ducks come from",
+        "are domestic ducks descended from mallards"
+      ],
+      "responses": [
+        "Most domestic duck breeds descend from the mallard and were domesticated at least about 2,000 years ago, probably first in East Asia; exact timing is debated. Muscovy ducks were domesticated separately in the Americas."
+      ]
+    },
+    {
+      "intent_name": "duck_domestic_breeds",
+      "training_phrases": [
+        "what are the breeds of domestic ducks",
+        "what are popular duck breeds",
+        "what is a pekin duck",
+        "what is a khaki campbell",
+        "what is an indian runner duck",
+        "what breed of duck should i get"
+      ],
+      "responses": [
+        "Popular domestic breeds include the white Pekin, the egg-laying Khaki Campbell and Indian Runner, the tiny Call duck, the mallard-colored Rouen, the black Cayuga, and the Muscovy. The best breed depends on whether you want eggs, meat, or pets."
+      ]
+    },
+    {
+      "intent_name": "duck_pets",
+      "training_phrases": [
+        "can ducks be pets",
+        "are ducks good pets",
+        "can i keep a pet duck",
+        "should i get a pet duck",
+        "do ducks make good pets"
+      ],
+      "responses": [
+        "Ducks can be rewarding pets, but they need outdoor space, secure housing, water for bathing, and companions of their own kind. They can be messy and loud, and they live for years, so check local rules first."
+      ]
+    },
+    {
+      "intent_name": "duck_care_basics",
+      "training_phrases": [
+        "how do i care for a pet duck",
+        "what do pet ducks need",
+        "how to take care of ducks",
+        "how do i keep ducks",
+        "duck housing"
+      ],
+      "responses": [
+        "Pet ducks need a predator-proof shelter at night, fresh water deep enough to dip their bill, a pool for bathing, a balanced waterfowl or duck feed, and company. A vet who knows birds helps."
+      ]
+    },
+    {
+      "intent_name": "duck_pond_needed",
+      "training_phrases": [
+        "do ducks need a pond",
+        "do pet ducks need a pool",
+        "can ducks live without a pond",
+        "do ducks need swimming water"
+      ],
+      "responses": [
+        "Ducks don't need a large pond, but they do need water deep enough to dunk their heads and bathe. A sturdy kiddie pool works, though it should be cleaned often."
+      ]
+    },
+    {
+      "intent_name": "duck_keep_two",
+      "training_phrases": [
+        "can i keep just one duck",
+        "do ducks need friends",
+        "do ducks get lonely",
+        "do ducks need companions",
+        "can ducks live alone"
+      ],
+      "responses": [
+        "Ducks are social, so it's generally best to keep at least two. A lone duck may be stressed and lonely without duck company."
+      ]
+    },
+    {
+      "intent_name": "duck_noisy",
+      "training_phrases": [
+        "are ducks noisy",
+        "are ducks loud",
+        "do ducks make a lot of noise"
+      ],
+      "responses": [
+        "Female ducks of many domestic breeds can be quite loud, while drakes are quieter and Muscovies are fairly quiet. It depends on the breed and the sex."
+      ]
+    },
+    {
+      "intent_name": "duck_messy",
+      "training_phrases": [
+        "are ducks messy",
+        "do ducks poop a lot",
+        "are ducks hard to keep clean"
+      ],
+      "responses": [
+        "Yes, ducks are messy. They splash water, produce a lot of droppings, and quickly foul their water, so their area needs regular cleaning."
+      ]
+    },
+    {
+      "intent_name": "duck_approach_wild",
+      "training_phrases": [
+        "how should i approach wild ducks",
+        "can i touch a wild duck",
+        "can i pet a duck",
+        "how close can i get to ducks",
+        "should i pick up a wild duck"
+      ],
+      "responses": [
+        "Watch wild ducks from a respectful distance, move slowly and quietly, and don't chase or pick them up. Keep extra distance from nests and ducklings."
+      ]
+    },
+    {
+      "intent_name": "duck_disturbance",
+      "training_phrases": [
+        "how do i avoid disturbing ducks",
+        "how do people disturb ducks",
+        "do dogs scare ducks",
+        "can drones scare ducks",
+        "why shouldnt i chase ducks",
+        "why shouldn't i chase ducks"
+      ],
+      "responses": [
+        "Chasing or disturbing ducks stresses them, wastes their energy, and can make them leave nests or feeding areas. Keep dogs leashed near water, avoid nesting areas, and don't fly drones close to birds."
+      ]
+    },
+    {
+      "intent_name": "duck_injured",
+      "training_phrases": [
+        "i found an injured duck",
+        "what do i do if a duck is injured",
+        "how to help an injured duck",
+        "found a sick duck"
+      ],
+      "responses": [
+        "Contact a licensed wildlife rehabilitator or your local wildlife agency for advice. Keep your distance, don't try to feed it, and wash your hands if you handle it."
+      ]
+    },
+    {
+      "intent_name": "duckling_found",
+      "training_phrases": [
+        "i found a baby duck",
+        "found a duckling alone",
+        "what to do if you find a lost duckling",
+        "should i pick up a baby duck",
+        "abandoned duckling"
+      ],
+      "responses": [
+        "Watch from a distance first, because the mother may be nearby. If the duckling really seems orphaned or hurt, contact a licensed wildlife rehabilitator or local wildlife agency. Don't feed it bread or milk, and don't keep a wild duckling, as that is often illegal."
+      ]
+    },
+    {
+      "intent_name": "duck_road_crossing",
+      "training_phrases": [
+        "ducks crossing the road",
+        "mother duck and ducklings in the road",
+        "how to help ducklings cross road",
+        "ducklings fell in a storm drain"
+      ],
+      "responses": [
+        "Slow down and stop safely to let the family cross. If ducklings fell into a storm drain, call local animal control or a wildlife rescue rather than trying to herd them yourself."
+      ]
+    },
+    {
+      "intent_name": "duck_bite",
+      "training_phrases": [
+        "do ducks bite",
+        "can ducks hurt you",
+        "are ducks dangerous"
+      ],
+      "responses": [
+        "Ducks have no teeth but can nip or pinch with their bills and flap their wings if frightened or protecting young. Serious injuries are rare."
+      ]
+    },
+    {
+      "intent_name": "duck_salmonella",
+      "training_phrases": [
+        "can you get sick from ducks",
+        "do ducks carry salmonella",
+        "do ducks carry diseases",
+        "should i wash my hands after touching ducks"
+      ],
+      "responses": [
+        "Ducks can carry germs like Salmonella without looking sick, so wash your hands after touching ducks, their water, or their droppings, and supervise children."
+      ]
+    },
+    {
+      "intent_name": "duck_legal",
+      "training_phrases": [
+        "are ducks protected by law",
+        "is it illegal to keep a wild duck",
+        "can i take duck eggs",
+        "is it legal to take a wild duckling",
+        "can i keep a wild duck as a pet"
+      ],
+      "responses": [
+        "In many countries, wild ducks, their eggs, and their nests are legally protected; for example, the US Migratory Bird Treaty Act protects most wild ducks. Rules vary by place, so check with your local wildlife agency."
+      ]
+    },
+    {
+      "intent_name": "duck_conservation_overview",
+      "training_phrases": [
+        "are ducks endangered",
+        "are ducks threatened",
+        "what is the conservation status of ducks",
+        "are duck populations declining",
+        "are ducks going extinct"
+      ],
+      "responses": [
+        "It varies by species. Some, like the mallard, are widespread and abundant, while others are threatened. Habitat loss is a major concern for many waterfowl."
+      ]
+    },
+    {
+      "intent_name": "duck_threatened_species",
+      "training_phrases": [
+        "which ducks are endangered",
+        "what are the rarest ducks",
+        "what is the rarest duck",
+        "name an endangered duck",
+        "which duck species are threatened"
+      ],
+      "responses": [
+        "Species that have been listed as threatened include the Madagascar pochard, Baer's pochard, the white-winged duck, and the Laysan duck. Conservation status changes, so check the IUCN Red List for current information."
+      ]
+    },
+    {
+      "intent_name": "duck_extinct",
+      "training_phrases": [
+        "have any ducks gone extinct",
+        "what ducks are extinct",
+        "what is the labrador duck",
+        "what is the pink headed duck"
+      ],
+      "responses": [
+        "Yes. The Labrador duck of eastern North America vanished in the 1800s, and the pink-headed duck of South Asia is widely believed to be extinct, with no confirmed sightings for decades."
+      ]
+    },
+    {
+      "intent_name": "duck_habitat_loss",
+      "training_phrases": [
+        "how does habitat loss affect ducks",
+        "what is habitat loss for ducks",
+        "why are wetlands disappearing",
+        "how are ducks threatened by wetland loss"
+      ],
+      "responses": [
+        "When wetlands are drained or developed for farming, housing, or industry, ducks lose the food, nesting cover, and resting places they depend on. Wetland loss is one of the biggest threats to waterfowl."
+      ]
+    },
+    {
+      "intent_name": "duck_pollution",
+      "training_phrases": [
+        "how does pollution affect ducks",
+        "does plastic hurt ducks",
+        "how do oil spills affect ducks",
+        "how does fishing line hurt ducks",
+        "what is toxic for ducks in the water"
+      ],
+      "responses": [
+        "Pollution can harm ducks in several ways: plastic and fishing line can entangle or injure them, oil strips the insulating and water-resistant quality from feathers, and toxins such as lead can poison them."
+      ]
+    },
+    {
+      "intent_name": "duck_climate_change",
+      "training_phrases": [
+        "how does climate change affect ducks",
+        "does climate change affect duck migration",
+        "how do droughts affect ducks",
+        "how does warming affect waterfowl"
+      ],
+      "responses": [
+        "Climate change can shift migration timing and routes, dry out breeding wetlands during droughts, and affect coastal habitats through sea-level rise. Effects differ by species, and research is ongoing."
+      ]
+    },
+    {
+      "intent_name": "duck_how_to_help",
+      "training_phrases": [
+        "how can i help ducks",
+        "how can i help protect ducks",
+        "what can i do to help ducks",
+        "how can i help duck conservation",
+        "how do i help wild ducks"
+      ],
+      "responses": [
+        "You can support wetland protection and restoration, keep waterways free of litter and fishing line, choose non-lead fishing gear, give wild ducks space, avoid feeding them junk food, and report sick birds to local wildlife officials."
+      ]
+    },
+    {
+      "intent_name": "duck_stamps",
+      "training_phrases": [
+        "what is a duck stamp",
+        "what is the federal duck stamp",
+        "how do duck stamps help ducks"
+      ],
+      "responses": [
+        "The US Federal Duck Stamp is a license stamp bought by waterfowl hunters and collectors. Its revenue is used to buy and protect wetland habitat."
+      ]
+    },
+    {
+      "intent_name": "duck_birdwatching",
+      "training_phrases": [
+        "how do i identify ducks",
+        "how can i tell duck species apart",
+        "how do i start duck watching",
+        "how do i report a duck sighting",
+        "what is ebird"
+      ],
+      "responses": [
+        "Start with a field guide or a bird ID app, and note size, bill shape, color patterns, and behavior. You can log sightings on eBird, a citizen-science site run by the Cornell Lab of Ornithology."
+      ]
+    },
+    {
+      "intent_name": "duck_myths",
+      "training_phrases": [
+        "what are common myths about ducks",
+        "duck myths",
+        "duck misconceptions",
+        "what do people get wrong about ducks",
+        "common duck misconceptions"
+      ],
+      "responses": [
+        "Common duck myths include that bread is a fine food for ducks, that all ducks quack, that duck quacks don't echo, that ducks are perfectly waterproof, and that all ducks mate for life. None of these are accurate."
+      ]
+    },
+    {
+      "intent_name": "duck_waterproof_myth",
+      "training_phrases": [
+        "are ducks really waterproof",
+        "are duck feathers really waterproof",
+        "are ducks truly waterproof",
+        "can ducks get waterlogged"
+      ],
+      "responses": [
+        "Not perfectly. Ducks are very water-resistant, but if their feather oils are stripped by detergent, oil, or poor health, they can become waterlogged and chilled."
+      ]
+    },
+    {
+      "intent_name": "duck_do_all_quack",
+      "training_phrases": [
+        "do all ducks quack",
+        "do all ducks make the same sound",
+        "do all ducks sound the same"
+      ],
+      "responses": [
+        "No. Many ducks whistle, grunt, coo, or growl instead of quacking, and in some species the male and female sound quite different."
+      ]
+    },
+    {
+      "intent_name": "duck_touch_myth",
+      "training_phrases": [
+        "will a mother duck abandon her ducklings if i touch them",
+        "is it true mother birds reject babies touched by humans",
+        "will a duck abandon her nest if touched"
+      ],
+      "responses": [
+        "Human scent alone doesn't usually make ducks abandon young, but handling ducklings can separate them from their mother and stress the family, so it's best to leave them alone."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_goose",
+      "training_phrases": [
+        "what is the difference between ducks and geese",
+        "ducks vs geese",
+        "duck or goose",
+        "how are geese different from ducks",
+        "are geese ducks"
+      ],
+      "responses": [
+        "Geese are usually larger than ducks, with longer necks, and graze more on grass. Male and female geese look alike and often pair for many years, while many male ducks are more colorful than females. Both are in the family Anatidae."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_swan",
+      "training_phrases": [
+        "difference between ducks and swans",
+        "ducks vs swans",
+        "are swans ducks",
+        "how are swans different from ducks"
+      ],
+      "responses": [
+        "Swans are much larger than ducks, with very long necks, and males and females look alike. They are close relatives, both in the family Anatidae, but swans are not ducks."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_chicken",
+      "training_phrases": [
+        "difference between ducks and chickens",
+        "ducks vs chickens",
+        "are ducks like chickens",
+        "are ducks poultry"
+      ],
+      "responses": [
+        "Ducks are waterfowl with webbed feet, water-resistant plumage, and a broad bill, while chickens are ground-scratching fowl in a different order. Both are kept as poultry, but their care differs, especially because ducks need water for bathing."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_coot",
+      "training_phrases": [
+        "is a coot a duck",
+        "difference between coot and duck",
+        "what is a coot",
+        "is a moorhen a duck"
+      ],
+      "responses": [
+        "Coots look duck-like but are not ducks. They belong to the rail family and have lobed toes instead of fully webbed feet and a short white bill."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_diving_birds",
+      "training_phrases": [
+        "is a grebe a duck",
+        "is a loon a duck",
+        "what is a grebe",
+        "what is a loon",
+        "is a cormorant a duck"
+      ],
+      "responses": [
+        "Grebes, loons, and cormorants are water birds that often look duck-like at a glance, but they are not ducks. They have different bills, bodies, and ancestry."
+      ]
+    },
+    {
+      "intent_name": "duck_vs_platypus",
+      "training_phrases": [
+        "is a platypus a duck",
+        "why does a platypus have a duck bill",
+        "are platypus related to ducks"
+      ],
+      "responses": [
+        "No. The platypus is an egg-laying mammal, and its bill is soft and touch-sensitive, not related to a duck's. The resemblance is a coincidence of appearance."
+      ]
+    },
+    {
+      "intent_name": "duck_musk_duck",
+      "training_phrases": [
+        "can ducks talk",
+        "can a duck imitate human speech",
+        "what is a musk duck",
+        "can ducks mimic sounds"
+      ],
+      "responses": [
+        "Ducks generally don't talk, but one captive male musk duck from Australia was reported to mimic human speech and other sounds."
+      ]
+    },
+    {
+      "intent_name": "duck_hybrids",
+      "training_phrases": [
+        "can ducks interbreed",
+        "can different duck species mate",
+        "what are hybrid ducks",
+        "can a mallard breed with other ducks"
+      ],
+      "responses": [
+        "Ducks hybridize more readily than most birds, and mallards sometimes breed with other species. This can threaten rare species by diluting their genes."
+      ]
+    },
+    {
+      "intent_name": "duck_unusual_adaptations",
+      "training_phrases": [
+        "what are the most unusual duck adaptations",
+        "what is the weirdest duck",
+        "what is the strangest duck",
+        "unusual ducks"
+      ],
+      "responses": [
+        "Some ducks are quite unusual. Torrent ducks live in fast mountain rivers, stiff-tailed ducks hold their spiky tails upright, and steamer ducks are heavy and mostly flightless."
+      ]
+    },
+    {
+      "intent_name": "duck_flightless",
+      "training_phrases": [
+        "are there flightless ducks",
+        "can any ducks not fly",
+        "what ducks cant fly",
+        "are there ducks that cant fly",
+        "what ducks can't fly",
+        "are there ducks that can't fly"
+      ],
+      "responses": [
+        "Yes. Some steamer ducks of South America are flightless as adults, and a few island ducks, such as the Campbell teal, are also flightless."
       ]
     },
     {
@@ -265,10 +2306,21 @@
       ]
     },
     {
+      "intent_name": "question_ideas",
+      "training_phrases": [
+        "what can i ask you",
+        "what topics do you know",
+        "what questions can i ask",
+        "give me ideas for questions",
+        "what do you know about"
+      ],
+      "responses": [
+        "Try asking me about duck species, what ducks eat, how ducklings grow, migration, feeding ducks safely, keeping pet ducks, conservation, or duck myths!"
+      ]
+    },
+    {
       "intent_name": "small_talk",
       "training_phrases": [
-        "how are you",
-        "how are you doing",
         "are you okay",
         "how's your day",
         "hows your day",
@@ -342,7 +2394,8 @@
         "Quack! I'm not sure about that one yet. Try asking me something about ducks!",
         "Hmm... my duck brain doesn't know that one yet.",
         "Quack! I haven't learned how to answer that yet.",
-        "I'm still learning! Try asking me about ducks, ducklings, or how I work."
+        "I'm still learning! Try asking me about ducks, ducklings, or how I work.",
+        "That's outside my pond! I specialize in ducks, so try asking me about their habits, habitats, diet, or conservation."
       ]
     }
   ]
