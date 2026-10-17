@@ -1,38 +1,39 @@
+
 from pathlib import Path
 import json
+import logging
+import os
 import random
 import re
-import logging
+import sqlite3
 
-
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from rapidfuzz import process, fuzz
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Quack.ai API", version="0.2.0")
+app = FastAPI(title="Quack.ai API", version="0.3.0")
 
-# Your frontend can call this API.
-# For production, restrict this to your actual frontend origin.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://hussainazzam100-ctrl.github.io"
-    ],
+    allow_origins=["https://hussainazzam100-ctrl.github.io"],
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
 )
 
 
+# ---------------------------------------------------------
+# Chat API
+# ---------------------------------------------------------
+
 class ChatRequest(BaseModel):
     message: str = Field(max_length=2000)
 
 
-# Load the database relative to this Python file.
 DB_PATH = Path(__file__).resolve().parent / "chatbot_db.json"
 
 
@@ -85,7 +86,6 @@ def load_database():
                 "phrase": normalized,
                 "intent": name,
             })
-
             duplicate_phrases.setdefault(normalized, set()).add(name)
 
     collisions = {
@@ -95,10 +95,7 @@ def load_database():
     }
 
     if collisions:
-        logger.warning(
-            "Training phrases shared by multiple intents: %s",
-            collisions
-        )
+        logger.warning("Training phrases shared by intents: %s", collisions)
 
     if "unknown" not in names:
         logger.warning("No 'unknown' intent exists in the database.")
@@ -123,57 +120,42 @@ def get_fallback_response():
         return random.choice(responses)
 
     return (
-        "Quack! I don't know that one yet. "
-        "Try asking me something about ducks!"
+        "Quack! I'm a duck-focused chatbot. "
+        "Try asking me about duck species, habitats, diets, or behaviour."
     )
 
 
 def find_best_intent(message: str):
-    """
-    Matching order:
-    1. Exact question match.
-    2. Complete phrase contained in the message.
-    3. Fuzzy spelling match above a conservative threshold.
-    """
-
     normalized = normalize_text(message)
-
     if not normalized:
         return None
 
-    # 1. Exact matches take priority.
-    exact_matches = [
-        item for item in phrase_index
-        if item["phrase"] == normalized
-    ]
+    # Exact match
+    for item in phrase_index:
+        if item["phrase"] == normalized:
+            return item["intent"]
 
-    if exact_matches:
-        return exact_matches[0]["intent"]
-
-    # 2. Match complete phrases, not arbitrary substrings.
+    # Complete phrase contained in the question
     contained_matches = []
 
     for item in phrase_index:
         phrase = item["phrase"]
 
-        # Avoid short matches such as "hi" inside "his".
         if len(phrase.split()) < 2 and len(phrase) < 8:
             continue
 
         pattern = rf"(?<!\w){re.escape(phrase)}(?!\w)"
-
         if re.search(pattern, normalized):
             contained_matches.append(item)
 
     if contained_matches:
-        # Prefer the most specific matching phrase.
         contained_matches.sort(
             key=lambda item: len(item["phrase"]),
-            reverse=True
+            reverse=True,
         )
         return contained_matches[0]["intent"]
 
-    # 3. Fuzzy matching helps with typos, not arbitrary meanings.
+    # Conservative fuzzy match for typos
     if len(normalized) >= 5 and phrases_for_fuzzy_matching:
         result = process.extractOne(
             normalized,
@@ -227,10 +209,7 @@ def build_response(message: str):
 
 @app.get("/")
 def root():
-    return {
-        "message": "Quack.ai API is running!",
-        "version": "0.2.0",
-    }
+    return {"message": "Quack.ai API is running!", "version": "0.3.0"}
 
 
 @app.get("/health")
@@ -245,3 +224,131 @@ def health():
 @app.post("/chat")
 def chat(request: ChatRequest):
     return build_response(request.message.strip())
+
+
+# ---------------------------------------------------------
+# Quiz leaderboard API
+# ---------------------------------------------------------
+
+# For local development, the database lives beside this file.
+# On Render, set QUACK_DATA_DIR to the path of a mounted
+# persistent disk, such as /var/data.
+DATA_DIR = Path(
+    os.getenv("QUACK_DATA_DIR", str(Path(__file__).resolve().parent))
+)
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+LEADERBOARD_DB = DATA_DIR / "leaderboard.db"
+
+
+def get_connection():
+    connection = sqlite3.connect(LEADERBOARD_DB, timeout=10)
+    connection.row_factory = sqlite3.Row
+    return connection
+
+
+def initialize_leaderboard():
+    with get_connection() as connection:
+        connection.execute("""
+            CREATE TABLE IF NOT EXISTS quiz_scores (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                name TEXT NOT NULL,
+                score INTEGER NOT NULL CHECK(score >= 0 AND score <= 10),
+                created_at TEXT NOT NULL DEFAULT (
+                    strftime('%Y-%m-%dT%H:%M:%S', 'now')
+                )
+            )
+        """)
+        connection.execute("""
+            CREATE INDEX IF NOT EXISTS idx_quiz_scores_score
+            ON quiz_scores(score DESC, created_at ASC)
+        """)
+
+
+initialize_leaderboard()
+
+
+class ScoreSubmission(BaseModel):
+    name: str = Field(min_length=1, max_length=24)
+    score: int = Field(ge=0, le=10, strict=True)
+
+    @field_validator("name")
+    @classmethod
+    def clean_name(cls, value: str) -> str:
+        cleaned = " ".join(value.split())
+
+        if not cleaned:
+            raise ValueError("Please enter a name.")
+
+        if len(cleaned) > 24:
+            raise ValueError("Name must be 24 characters or fewer.")
+
+        # Avoid control characters and HTML-like markup in public names.
+        if any(ord(char) < 32 or ord(char) == 127 for char in cleaned):
+            raise ValueError("Name contains unsupported characters.")
+
+        if "<" in cleaned or ">" in cleaned:
+            raise ValueError("Please remove angle brackets from the name.")
+
+        return cleaned
+
+
+@app.get("/leaderboard")
+def get_leaderboard():
+    try:
+        with get_connection() as connection:
+            rows = connection.execute("""
+                SELECT
+                    name,
+                    score,
+                    created_at,
+                    RANK() OVER (ORDER BY score DESC) AS rank
+                FROM quiz_scores
+                ORDER BY score DESC, created_at ASC, id ASC
+                LIMIT 100
+            """).fetchall()
+
+        return {
+            "entries": [
+                {
+                    "rank": row["rank"],
+                    "name": row["name"],
+                    "score": row["score"],
+                    "created_at": row["created_at"],
+                }
+                for row in rows
+            ]
+        }
+    except sqlite3.Error:
+        logger.exception("Failed to read quiz leaderboard")
+        raise HTTPException(
+            status_code=500,
+            detail="The leaderboard is temporarily unavailable.",
+        )
+
+
+@app.post("/leaderboard", status_code=201)
+def submit_score(submission: ScoreSubmission, request: Request):
+    # Basic server-side validation prevents invalid scores, but this
+    # is not strong anti-cheat: clients can still submit fabricated scores.
+    try:
+        with get_connection() as connection:
+            connection.execute(
+                "INSERT INTO quiz_scores (name, score) VALUES (?, ?)",
+                (submission.name, submission.score),
+            )
+
+        logger.info(
+            "Quiz score accepted: score=%s",
+            submission.score,
+        )
+        return {
+            "message": "Score saved.",
+            "name": submission.name,
+            "score": submission.score,
+        }
+    except sqlite3.Error:
+        logger.exception("Failed to save quiz score")
+        raise HTTPException(
+            status_code=500,
+            detail="The score could not be saved.",
+        )

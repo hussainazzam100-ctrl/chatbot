@@ -1,111 +1,582 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quack.ai — Your duck-brained AI assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f3e9">
+    <meta name="description" content="Explore seven remarkable duck species, discover wildlife facts, ask Quack.ai questions, and test your duck knowledge.">
+
+    <title>Quack.ai — your Friendly neighbourhood duck</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="cb.css">
 </head>
+
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="ripple-bg" aria-hidden="true">
-        <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
-            <path class="ripple ripple-1" d="M0,120 C300,180 900,60 1200,120 L1200,300 L0,300 Z"></path>
-            <path class="ripple ripple-2" d="M0,160 C300,100 900,220 1200,160 L1200,300 L0,300 Z"></path>
-        </svg>
-    </div>
+    <!-- Header -->
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Quack.ai home">
+            <span class="brand-mark" aria-hidden="true">
+                <img src="img/image_2026-08-16_215942219.png" alt="">
+            </span>
+            <span>Quack<span class="brand-dot">.</span>ai</span>
+        </a>
 
-    <header class="hero">
-        <div class="hero-inner">
-            <p class="hero-eyebrow">🦆 duck-powered AI</p>
-            <h1 class="hero-title">Quack.ai</h1>
-            <p class="hero-tagline">Ask the internet's most opinionated duck.</p>
-            <p class="hero-sub">
-                Quack.ai is a small AI assistant that knows an unreasonable amount about ducks —
-                their species, habits, diets, and the odd fact you didn't ask for. Type a question
-                and get a real answer, duck-style.
-            </p>
-            <button class="cta-btn" data-open-chat>
-                Chat with Quack
-                <span class="cta-icon">💬</span>
-            </button>
-        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#explore">Explore ducks</a>
+            <a href="#ask">Ask Quack</a>
+            <a href="#quiz">Duck quiz</a>
+            <a href="#leaderboard">Leaderboard</a>
+        </nav>
+
+        <button class="nav-chat-btn" type="button" data-open-chat>
+            Ask a question <span aria-hidden="true">↗</span>
+        </button>
     </header>
 
-    <main class="learn-section">
-        <div class="learn-heading">
-            <h2>Learn about ducks</h2>
-            <p>A quick primer — then let Quack fill in the rest.</p>
-        </div>
+    <main id="main">
 
-        <div class="card-grid">
-            <article class="duck-card">
-                <span class="card-icon">🦆</span>
-                <h3>Duck Species</h3>
-                <p>From the familiar mallard to sea-going eiders, hundreds of species have adapted to wildly different habitats worldwide.</p>
-            </article>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    YOUR LITTLE GUIDE TO THE DUCK WORLD
+                </p>
 
-            <article class="duck-card">
-                <span class="card-icon">🌊</span>
-                <h3>Duck Habitats</h3>
-                <p>Ducks live wherever there's water — lakes, rivers, coastlines, even city parks — and many migrate seasonally.</p>
-            </article>
+                <h1>
+                    A pond full of<br>
+                    things to <em>discover.</em>
+                </h1>
 
-            <article class="duck-card">
-                <span class="card-icon">🍽️</span>
-                <h3>Duck Diet</h3>
-                <p>Most ducks eat plants, seeds, and small aquatic critters. Bread looks generous but offers little real nutrition.</p>
-            </article>
+                <p class="hero-description">
+                    From colourful forest ducks to remarkable diving birds,
+                    there's more to ducks than a quack and a pond.
+                    Explore different species, ask questions, and see what you know.
+                </p>
 
-            <article class="duck-card">
-                <span class="card-icon">🥚</span>
-                <h3>Ducklings</h3>
-                <p>Many ducklings can swim within hours of hatching, though they stay close to mom for protection and guidance.</p>
-            </article>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#explore">
+                        Meet the ducks <span aria-hidden="true">↓</span>
+                    </a>
 
-            <article class="duck-card">
-                <span class="card-icon">🧠</span>
-                <h3>Duck Behavior</h3>
-                <p>Quacking is just one signal in a wider vocabulary of calls, postures, and wing movements ducks use to communicate.</p>
-            </article>
+                    <button
+                        class="button button-outline"
+                        type="button"
+                        data-open-chat
+                    >
+                        Ask Quack.ai <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
 
-            <article class="duck-card">
-                <span class="card-icon">🤯</span>
-                <h3>Weird Duck Facts</h3>
-                <p>Some ducks sleep with one eye open, staying half-alert for predators even while resting. Ask Quack for more.</p>
-            </article>
-        </div>
+                <div class="hero-note">
+                    <span class="hero-note-line"></span>
+                    <p>Curiosity lives here. Bread crumbs aren't required.</p>
+                </div>
+            </div>
 
-        <p class="learn-footnote">Curious about something specific? Quack knows more than fits on this page — just ask.</p>
+            <div class="hero-art" aria-label="Featured duck">
+                <div class="hero-image-frame">
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:FilePath/Mandarin_duck.jpg"
+                        alt="A colourful Mandarin duck"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('image-fallback')"
+                    >
+
+                    <div class="image-caption">
+                        <span class="caption-dot"></span>
+                        <span>Meet the Mandarin duck</span>
+                        <span class="caption-scientific">Aix galericulata</span>
+                    </div>
+                </div>
+
+                <div class="floating-note note-top">
+                    <span aria-hidden="true">↗</span>
+                    Seven species to discover
+                </div>
+
+                <div class="floating-note note-bottom">
+                    <span class="note-sun" aria-hidden="true">✳</span>
+                    Small bird. Big personality.
+                </div>
+
+                <span class="hero-decoration decoration-one" aria-hidden="true">〰</span>
+                <span class="hero-decoration decoration-two" aria-hidden="true">✳</span>
+            </div>
+        </section>
+
+        <!-- Quick introduction -->
+        <section class="intro-strip" aria-label="What you can do">
+            <div>
+                <span class="strip-number">01</span>
+                <span>Meet different species</span>
+            </div>
+
+            <div>
+                <span class="strip-number">02</span>
+                <span>Ask a duck expert</span>
+            </div>
+
+            <div>
+                <span class="strip-number">03</span>
+                <span>Test your knowledge</span>
+            </div>
+        </section>
+
+        <!-- Species explorer -->
+        <section class="section species-section" id="explore">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIELD NOTES</p>
+                    <h2>
+                        Meet your neighbours.<br>
+                        <em>And some distant cousins.</em>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Seven ducks, seven different stories. Search the collection
+                    and discover what makes each species special.
+                </p>
+            </div>
+
+            <div class="explorer-controls">
+                <label class="search-box">
+                    <span aria-hidden="true">⌕</span>
+                    <span class="visually-hidden">Search duck species</span>
+
+                    <input
+                        id="species-search"
+                        type="search"
+                        placeholder="Search by name, habitat, or feature…"
+                        autocomplete="off"
+                    >
+                </label>
+
+                <label class="filter-label" for="species-filter">
+                    Browse by group
+                </label>
+
+                <select id="species-filter">
+                    <option value="all">All ducks</option>
+                    <option value="dabbling">Dabbling ducks</option>
+                    <option value="diving">Diving ducks</option>
+                    <option value="perching">Perching ducks</option>
+                    <option value="other">Other ducks</option>
+                </select>
+            </div>
+
+            <p id="species-count" class="results-count" aria-live="polite">
+                Seven species to explore
+            </p>
+
+            <!-- Species cards are populated by JavaScript. -->
+            <div id="species-grid" class="species-grid"></div>
+
+            <p id="species-empty" class="empty-state hidden" role="status">
+                No ducks match that search. Try another name or habitat.
+            </p>
+        </section>
+
+        <!-- Ask Quack -->
+        <section class="ask-section" id="ask">
+            <div class="ask-copy">
+                <p class="eyebrow">YOUR CURIOUS COMPANION</p>
+
+                <h2>
+                    Got a question?<br>
+                    <em>Let's talk ducks.</em>
+                </h2>
+
+                <p>
+                    Why do ducks dabble? How many species are there?
+                    What exactly is a duck, anyway? Ask away.
+                    Quack.ai uses its duck-focused knowledge base to find a response.
+                </p>
+
+                <ul class="ask-points">
+                    <li>
+                        <span aria-hidden="true">✓</span>
+                        Species, habitats, diets, and behaviour
+                    </li>
+                    <li>
+                        <span aria-hidden="true">✓</span>
+                        Ducklings, migration, and unusual facts
+                    </li>
+                    <li>
+                        <span aria-hidden="true">✓</span>
+                        A polite nudge back to ducks for unrelated questions
+                    </li>
+                </ul>
+
+                <button class="button button-light" type="button" data-open-chat>
+                    Open the chat <span aria-hidden="true">↗</span>
+                </button>
+            </div>
+
+            <div class="chat-preview">
+                <div class="preview-top">
+                    <div class="preview-brand">
+                        <span class="preview-avatar">
+                            <img
+                                src="img/image_2026-08-16_215942219.png"
+                                alt=""
+                            >
+                        </span>
+
+                        <div>
+                            <strong>Quack.ai</strong>
+                            <small>Your duck-focused companion</small>
+                        </div>
+                    </div>
+
+                    <span class="online-status">
+                        <span></span>
+                        Ready to chat
+                    </span>
+                </div>
+
+                <div class="preview-conversation">
+                    <p class="preview-label">TRY ASKING</p>
+
+                    <button
+                        type="button"
+                        class="suggestion"
+                        data-question="What are ducks?"
+                    >
+                        What are ducks? <span aria-hidden="true">↗</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="suggestion"
+                        data-question="How many duck species are there?"
+                    >
+                        How many duck species are there?
+                        <span aria-hidden="true">↗</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="suggestion"
+                        data-question="Why do ducks have webbed feet?"
+                    >
+                        Why do ducks have webbed feet?
+                        <span aria-hidden="true">↗</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="suggestion"
+                        data-question="What do ducks eat?"
+                    >
+                        What do ducks eat? <span aria-hidden="true">↗</span>
+                    </button>
+                </div>
+
+                <div class="preview-bottom">
+                    <span>Powered by your FastAPI knowledge base</span>
+                    <span aria-hidden="true">🦆</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Duck quiz -->
+        <section class="section quiz-section" id="quiz">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A LITTLE FRIENDLY COMPETITION </p>
+                    <h2>
+                        Think you're a<br>
+                        <em>duck detective?</em>
+                    </h2>
+                </div>
+
+                <p class="section-description">
+                    Ten questions. One at a time. Find out how much you really
+                    know about our feathered friends.
+                </p>
+            </div>
+
+            <div class="quiz-layout">
+                <div class="quiz-card">
+
+                    <!-- Quiz start -->
+                    <div id="quiz-start">
+                        <div class="quiz-illustration" aria-hidden="true">✳</div>
+
+                        <p class="eyebrow">THE QUACK QUIZ</p>
+
+                        <h3>Let's put your duck knowledge to the test.</h3>
+
+                        <p>
+                            Answer ten multiple-choice questions.
+                            You'll get feedback as you go, and your final
+                            score is out of 10.
+                        </p>
+
+                        <label class="name-field" for="quiz-name">
+                            Your name for the leaderboard
+                        </label>
+
+                        <input
+                            id="quiz-name"
+                            type="text"
+                            maxlength="24"
+                            autocomplete="nickname"
+                            placeholder="e.g. Pond Explorer"
+                        >
+
+                        <p
+                            id="quiz-name-error"
+                            class="field-error hidden"
+                            role="alert"
+                        >
+                            Please enter a name (up to 24 characters).
+                        </p>
+
+                        <button
+                            class="button button-primary button-full"
+                            id="start-quiz"
+                            type="button"
+                        >
+                            Start the quiz <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Active quiz -->
+                    <div id="quiz-play" class="hidden">
+                        <div class="quiz-progress-top">
+                            <span id="quiz-progress-label">QUESTION 1 OF 10</span>
+                            <span id="quiz-score-label">Score: 0</span>
+                        </div>
+
+                        <div
+                            class="progress-track"
+                            id="quiz-progress"
+                            role="progressbar"
+                            aria-label="Quiz progress"
+                            aria-valuemin="0"
+                            aria-valuemax="10"
+                            aria-valuenow="0"
+                        >
+                            <div id="quiz-progress-fill"></div>
+                        </div>
+
+                        <h3 id="quiz-question">Question goes here</h3>
+
+                        <div id="quiz-options" class="quiz-options"></div>
+
+                        <p
+                            id="quiz-feedback"
+                            class="quiz-feedback"
+                            aria-live="polite"
+                        ></p>
+
+                        <button
+                            class="button button-primary button-full hidden"
+                            id="next-question"
+                            type="button"
+                        >
+                            Next question <span aria-hidden="true">→</span>
+                        </button>
+                    </div>
+
+                    <!-- Quiz results -->
+                    <div id="quiz-result" class="hidden">
+                        <p class="eyebrow">THAT'S A WRAP</p>
+
+                        <div id="result-score" class="result-score">0/10</div>
+
+                        <h3 id="result-title">Well played!</h3>
+
+                        <p id="result-message"></p>
+
+                        <p
+                            id="leaderboard-submit-status"
+                            class="submit-status"
+                            aria-live="polite"
+                        ></p>
+
+                        <button
+                            class="button button-primary button-full"
+                            id="play-again"
+                            type="button"
+                        >
+                            Play again <span aria-hidden="true">↻</span>
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="quiz-aside">
+                    <div class="aside-number">10<span>×</span></div>
+
+                    <h3>One question at a time.</h3>
+
+                    <p>
+                        No pressure. You'll learn something even if you miss a few.
+                    </p>
+
+                    <div class="aside-rule"></div>
+
+                    <p class="aside-small">YOUR MISSION</p>
+
+                    <ul>
+                        <li>Read each question</li>
+                        <li>Choose one answer</li>
+                        <li>Learn from the feedback</li>
+                        <li>Make the leaderboard</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Leaderboard -->
+        <section class="leaderboard-section" id="leaderboard">
+            <div class="section leaderboard-heading">
+                <div>
+                    <p class="eyebrow">THE POND'S CLEVEREST</p>
+
+                    <h2>The <em>leaderboard.</em></h2>
+
+                    <p class="leaderboard-intro">
+                        A little friendly bragging rights for the duck-curious.
+                    </p>
+                </div>
+
+                <div class="leaderboard-stamp" aria-hidden="true">
+                    TOP<br>
+                    DUCKS<br>
+                    ✳
+                </div>
+            </div>
+
+            <div class="leaderboard-wrap">
+                <div class="leaderboard-topline">
+                    <span>THE HONOUR ROLL</span>
+
+                    <button
+                        type="button"
+                        id="refresh-leaderboard"
+                        class="text-button"
+                    >
+                        Refresh ↻
+                    </button>
+                </div>
+
+                <div class="leaderboard-scroll">
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Rank</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="leaderboard-body">
+                            <tr>
+                                <td colspan="4" class="table-message">
+                                    Loading the pond's honour roll…
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p id="leaderboard-note" class="leaderboard-note">
+                    Scores are loaded from the Quack.ai server.
+                </p>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
-        <p>ducks for life, powered by a small intent-matching backend. 🦆</p>
+        <a class="brand footer-brand" href="#home" aria-label="Quack.ai home">
+            <span class="brand-mark" aria-hidden="true">
+                <img src="img/image_2026-08-16_215942219.png" alt="">
+            </span>
+
+            <span>Quack<span class="brand-dot">.</span>ai</span>
+        </a>
+
+        <p>Made for the curious. Dedicated to ducks.</p>
+
+        <a href="#home" class="back-top">Back to the top ↑</a>
     </footer>
 
-    <!-- ===== Chatbot widget (preserved) ===== -->
-    <div id="chatbot-icon">
-     <img src="img/image_2026-08-16_215942219.png" alt="duck">
-    </div>
+    <!-- Floating chatbot launcher: your logo is the clickable icon -->
+    <button
+        id="chatbot-icon"
+        type="button"
+        aria-label="Open Quack.ai chat"
+        aria-controls="chatbot-container"
+        aria-expanded="false"
+    >
+        <img src="img/image_2026-08-16_215942219.png" alt="">
+    </button>
 
-    <div id="chatbot-container" class="hidden">
-      <div id="chatbot-header">
-        <span>Quack</span>
-        <button id="close-btn">&times;</button>
-      </div>
-      <div id="chatbot-body">
-        <div id="chatbot-messages"></div>
-      </div>
+    <!-- Existing FastAPI chatbot -->
+    <section
+        id="chatbot-container"
+        class="hidden"
+        role="dialog"
+        aria-label="Chat with Quack.ai"
+        aria-modal="false"
+    >
+        <div id="chatbot-header">
+            <div class="chat-title">
+                <span class="chat-avatar">
+                    <img src="img/image_2026-08-16_215942219.png" alt="">
+                </span>
 
-      <div id="chatbot-input-container">
-        <input type="text" id="chatbot-input" placeholder="type a message....."/>
-        <button id="send-btn">Send</button>
-      </div>
-    </div>
+                <div>
+                    <strong>Quack.ai</strong>
+                    <small>Duck questions welcome</small>
+                </div>
+            </div>
 
+            <button id="close-btn" type="button" aria-label="Close chat">
+                &times;
+            </button>
+        </div>
+
+        <div id="chatbot-body">
+            <div
+                id="chatbot-messages"
+                aria-live="polite"
+                aria-relevant="additions text"
+            ></div>
+        </div>
+
+        <form id="chatbot-input-container">
+            <label class="visually-hidden" for="chatbot-input">
+                Your message
+            </label>
+
+            <input
+                type="text"
+                id="chatbot-input"
+                maxlength="2000"
+                placeholder="Ask about ducks…"
+                autocomplete="off"
+            >
+
+            <button id="send-btn" type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Keep the existing backend configuration and chatbot script. -->
     <script src="config.js"></script>
     <script src="chatbot.js"></script>
 </body>
