@@ -1,4 +1,3 @@
-
 :root {
     --cream: #f6f3e9;
     --paper: #fffdf7;
@@ -185,6 +184,36 @@ em {
     border-radius: 0;
     box-shadow: none;
 }
+
+
+.site-header .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.site-header .brand-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.site-header .brand-mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 
 .brand-dot {
     color: #c58c2c;
