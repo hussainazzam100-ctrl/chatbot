@@ -1000,3 +1000,4 @@ refreshLeaderboardBtn?.addEventListener("click", loadLeaderboard);
 
 // Load existing saved scores when the page opens.
 loadLeaderboard();
+});
